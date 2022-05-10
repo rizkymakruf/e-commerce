@@ -14,8 +14,16 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#fff" />
           <meta name="google" value="notranslate" />
 
+          {/* <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+          ></link> */}
           <link
             href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+          ></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap"
             rel="stylesheet"
           ></link>
           {/* slider */}

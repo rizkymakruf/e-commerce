@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function BestProduct() {
   return (
     <div className="w-full">
@@ -28,16 +30,18 @@ export default function BestProduct() {
 
       {/* Content */}
       <div className="flex md:grid md:grid-cols-6 gap-2 md:gap-3 md:mx-[58px] md:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
-        <div className="w-28 md:w-full flex-none justify-center items-center">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product1.jpg"
-          />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
-            Expresso Coffee Blend <br />
-            Red Blend 1kg
-          </div>
-        </div>
+        <Link href={"/detail"}>
+          <button className="w-28 md:w-full flex-none justify-center items-center">
+            <img
+              className="w-full rounded-tr-md rounded-tl-md"
+              src="/static/images/product1.jpg"
+            />
+            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md shadow-lg ">
+              Expresso Coffee Blend <br />
+              Red Blend 1kg
+            </div>
+          </button>
+        </Link>
 
         <div className="w-28 md:w-full flex-none justify-center items-center">
           <img
@@ -49,7 +53,8 @@ export default function BestProduct() {
             Yellow Caturra 250gr
           </div>
         </div>
-        <div className="w-28 md:w-full  flex-none justify-center items-center">
+
+        <div className="w-28 md:w-full flex-none justify-center items-center">
           <img
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product1.jpg"
@@ -59,6 +64,7 @@ export default function BestProduct() {
             Merah Series 1Kg
           </div>
         </div>
+
         <div className="w-28 md:w-full flex-none justify-center items-center">
           <img
             className="w-full rounded-tr-md rounded-tl-md"
@@ -90,6 +96,7 @@ export default function BestProduct() {
             Putih Series 1Kg
           </div>
         </div>
+
         <div className="w-28 md:w-full flex-none justify-center items-center md:hidden">
           <img
             className="w-full rounded-tr-md rounded-tl-md"

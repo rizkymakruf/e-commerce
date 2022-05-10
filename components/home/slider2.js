@@ -5,10 +5,10 @@ import Autoplay from "embla-carousel-autoplay";
 // import { mediaByIndex } from "../media";
 // import "../css/embla.css";
 
-const Slider = ({ slides, options = { loop: true } }) => {
+const Slider2 = ({ slide2, options = { loop: false } }) => {
   const autoplay = useRef(
     Autoplay(
-      { delay: 5000, stopOnInteraction: false, draggable: true },
+      { delay: 3000, stopOnInteraction: false },
       (emblaRoot) => emblaRoot.parentElement
     )
   );
@@ -57,22 +57,25 @@ const Slider = ({ slides, options = { loop: true } }) => {
 
   return (
     <>
-      <div className="embla mt-32 md:mt-32 w-full">
+      <div className="embla mt-10 w-full z-10 absolute">
         <div className="embla__viewport" ref={viewportRef}>
           <div className="embla__container">
-            {slides.map((index) => (
+            {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#969696] md:h-8/12 items-center flex py-3.5">
+                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
-                    <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                    <div className="">
+                      <img
+                        className="-translate-y-16 -translate-x-3 md:-translate-y-32 lg:-translate-y-40 md:-translate-x-16 lg:-translate- w-60 md:w-8/12 lg:w-7/12 absolute z-20"
+                        src="/static/images/slider-img.png"
+                      />
                     </div>
                     {/* Text */}
-                    <div className="flex-col">
+                    <div className="flex-col z-30 translate-x-24 md:translate-x-36 lg:translate-x-44 w-52 md:w-7/12 lg:w-8/12">
                       <div className="text-[30px] md:text-[55px] lg:text-[80px] text-white fontbebas tracking-wide whitespace-nowrap">
-                        WHITE BLEND
+                        COFFEE MACHINE
                       </div>
                       <div className="text-[8px] md:text-sm text-white leading-3 mb-5">
                         Lörem ipsum poskap epijivis såväl som decital därför att
@@ -84,8 +87,8 @@ const Slider = ({ slides, options = { loop: true } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="text-xs px-3 md:text-lg md:px-5 md:w-full py-1 bg-[#C86524] bg-opacity-70 text-white rounded-full whitespace-nowrap">
-                        ORDER NOW
+                      <button className="z-40 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                        Belanja Sekarang
                       </button>
                     </div>
                   </div>
@@ -93,19 +96,22 @@ const Slider = ({ slides, options = { loop: true } }) => {
                 </div>
               </div>
             ))}
-            {slides.map((index) => (
+            {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#969696] md:h-8/12 items-center flex py-3.5">
+                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
-                    <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                    <div className="">
+                      <img
+                        className="-translate-y-16 -translate-x-3 md:-translate-y-32 lg:-translate-y-40 md:-translate-x-16 lg:-translate- w-60 md:w-8/12 lg:w-7/12 absolute z-20"
+                        src="/static/images/slider-img.png"
+                      />
                     </div>
                     {/* Text */}
-                    <div className="flex-col">
+                    <div className="flex-col z-30 translate-x-24 md:translate-x-36 lg:translate-x-44 w-52 md:w-7/12 lg:w-8/12">
                       <div className="text-[30px] md:text-[55px] lg:text-[80px] text-white fontbebas tracking-wide whitespace-nowrap">
-                        WHITE BLEND
+                        COFFEE MACHINE
                       </div>
                       <div className="text-[8px] md:text-sm text-white leading-3 mb-5">
                         Lörem ipsum poskap epijivis såväl som decital därför att
@@ -117,8 +123,8 @@ const Slider = ({ slides, options = { loop: true } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="text-xs px-3 md:text-lg md:px-5 md:w-full py-1 bg-[#C86524] bg-opacity-70 text-white rounded-full whitespace-nowrap">
-                        ORDER NOW
+                      <button className="z-40 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                        Belanja Sekarang
                       </button>
                     </div>
                   </div>
@@ -126,19 +132,22 @@ const Slider = ({ slides, options = { loop: true } }) => {
                 </div>
               </div>
             ))}
-            {slides.map((index) => (
+            {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#969696] md:h-8/12 items-center flex py-3.5">
+                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
-                    <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                    <div className="">
+                      <img
+                        className="-translate-y-16 -translate-x-3 md:-translate-y-32 lg:-translate-y-40 md:-translate-x-16 lg:-translate- w-60 md:w-8/12 lg:w-7/12 absolute z-20"
+                        src="/static/images/slider-img.png"
+                      />
                     </div>
                     {/* Text */}
-                    <div className="flex-col">
+                    <div className="flex-col z-30 translate-x-24 md:translate-x-36 lg:translate-x-44 w-52 md:w-7/12 lg:w-8/12">
                       <div className="text-[30px] md:text-[55px] lg:text-[80px] text-white fontbebas tracking-wide whitespace-nowrap">
-                        WHITE BLEND
+                        COFFEE MACHINE
                       </div>
                       <div className="text-[8px] md:text-sm text-white leading-3 mb-5">
                         Lörem ipsum poskap epijivis såväl som decital därför att
@@ -150,8 +159,8 @@ const Slider = ({ slides, options = { loop: true } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="text-xs px-3 md:text-lg md:px-5 md:w-full py-1 bg-[#C86524] bg-opacity-70 text-white rounded-full whitespace-nowrap">
-                        ORDER NOW
+                      <button className="z-40 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                        Belanja Sekarang
                       </button>
                     </div>
                   </div>
@@ -159,19 +168,22 @@ const Slider = ({ slides, options = { loop: true } }) => {
                 </div>
               </div>
             ))}
-            {slides.map((index) => (
+            {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#969696] md:h-8/12 items-center flex py-3.5">
+                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
-                    <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                    <div className="">
+                      <img
+                        className="-translate-y-16 -translate-x-3 md:-translate-y-32 lg:-translate-y-40 md:-translate-x-16 lg:-translate- w-60 md:w-8/12 lg:w-7/12 absolute z-20"
+                        src="/static/images/slider-img.png"
+                      />
                     </div>
                     {/* Text */}
-                    <div className="flex-col">
+                    <div className="flex-col z-30 translate-x-24 md:translate-x-36 lg:translate-x-44 w-52 md:w-7/12 lg:w-8/12">
                       <div className="text-[30px] md:text-[55px] lg:text-[80px] text-white fontbebas tracking-wide whitespace-nowrap">
-                        WHITE BLEND
+                        COFFEE MACHINE
                       </div>
                       <div className="text-[8px] md:text-sm text-white leading-3 mb-5">
                         Lörem ipsum poskap epijivis såväl som decital därför att
@@ -183,8 +195,8 @@ const Slider = ({ slides, options = { loop: true } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="text-xs px-3 md:text-lg md:px-5 md:w-full py-1 bg-[#C86524] bg-opacity-70 text-white rounded-full whitespace-nowrap">
-                        ORDER NOW
+                      <button className="z-40 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                        Belanja Sekarang
                       </button>
                     </div>
                   </div>
@@ -241,4 +253,4 @@ export const NextButton = ({ enabled, onClick }) => (
     </svg>
   </button>
 );
-export default Slider;
+export default Slider2;

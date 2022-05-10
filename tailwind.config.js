@@ -1,3 +1,4 @@
+const { colors } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -7,9 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   sans: ['Bebas Neue', ...defaultTheme.fontFamily.sans]
-      // }
+      fontFamily: {
+        sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [require("@tailwindcss/custom-forms")],
