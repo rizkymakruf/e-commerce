@@ -8,6 +8,11 @@ import ProductGalery from "components/detail/ProductGalery";
 import ProductDetails from "components/detail/ProductDetails";
 import AddOrder from "components/detail/AddOrder";
 
+import Ulasan from "components/detail/Ulasan";
+import PhotoReview from "components/detail/PhotoReview";
+
+import Other from "components/detail/Other";
+
 const SLIDE_COUNT = 1;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
@@ -16,19 +21,26 @@ export default function Home() {
     <>
       <NavBar />
       <RouteBar />
-      <div className="h-screen pt-36 flex px-16 gap-x-6">
-        <div className="flex gap-x-6">
-          <ProductGalery />
-        </div>
-        <div className="flex gap-x-6 overflow-y-scroll">
-          <ProductDetails />
-        </div>
-        <div className="relative">
-          <div className="flex gap-x-6">
-            <AddOrder />
+      <div className="h-full pt-4 flex px-16 gap-x-6">
+        <div className="h-full">
+          <div className="h-full pt-4 flex gap-x-6">
+            <div className="flex gap-x-6 h-full sticky top-32">
+              <ProductGalery />
+            </div>
+            <div className="scrollbar flex gap-x-6 h-full">
+              <ProductDetails />
+            </div>
+          </div>
+          <div>
+            <Ulasan />
+            <PhotoReview />
           </div>
         </div>
+        <div className="flex gap-x-6 h-full sticky top-32">
+          <AddOrder />
+        </div>
       </div>
+      <Other />
       <Footer />
       <Navigasi />
     </>

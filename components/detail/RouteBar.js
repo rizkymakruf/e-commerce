@@ -1,6 +1,6 @@
 const RouteBar = () => {
   return (
-    <div className="bg-white w-full fixed top-24 flex items-center px-14 bg-opacity-20 backdrop-blur-sm">
+    <div className="bg-white w-full mt-24 flex items-center px-14">
       <div className="flex items-center border-gray-300 border-b w-full py-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"

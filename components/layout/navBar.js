@@ -1,7 +1,7 @@
 export default function NavBar() {
   return (
     <>
-      <div className="md:bg-[#D63031] md:bg-opacity-70 md:backdrop-filter md:backdrop-blur-md bg-white w-full h-24 flex items-center justify-around  md:px-[58px] gap-4 fixed z-10 top-0">
+      <div className="md:bg-[#D63031] md:bg-opacity-70 md:backdrop-filter md:backdrop-blur-md bg-white w-full h-24 flex items-center justify-around  md:px-[58px] gap-4 fixed z-40 top-0">
         <a className="hidden md:block" href="/">
           <div className="hidden md:block">
             <div className="flex items-center gap-x-2 w-full">

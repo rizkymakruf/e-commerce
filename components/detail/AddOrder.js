@@ -41,8 +41,8 @@ const ProductGalery = () => {
                     <path
                       d="M17.2216 12.4086H12.4956H7.76953"
                       stroke="#D63031"
-                      stroke-width="1.18151"
-                      stroke-linecap="round"
+                      strokeWidth="1.18151"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </button>
@@ -66,8 +66,8 @@ const ProductGalery = () => {
                     <path
                       d="M12.5043 17.7254V12.4086M12.5043 12.4086V7.09186M12.5043 12.4086H17.2304M12.5043 12.4086H7.77832"
                       stroke="#D63031"
-                      stroke-width="1.18151"
-                      stroke-linecap="round"
+                      strokeWidth="1.18151"
+                      strokeLinecap="round"
                     />
                   </svg>
                 </button>

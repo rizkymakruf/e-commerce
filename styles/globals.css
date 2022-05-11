@@ -154,3 +154,11 @@
 .fontbebas {
   font-family: "Bebas Neue";
 }
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+} */
+
+.m {
+  mask-type: alpha;
+}
