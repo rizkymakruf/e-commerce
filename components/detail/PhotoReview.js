@@ -1,7 +1,7 @@
 const PhotoReview = () => {
   return (
-    <div className="w-full h-screen bg-yellow-200">
-      <div className="flex items-center justify-between mx-3.5 py-3.5">
+    <div className="w-full h-auto">
+      <div className="flex items-center justify-between pb-4">
         <div className="text-lg font-bold">Foto dari pembeli</div>
         <div className="flex items-center gap-x-2">
           <div className="text-red-600 text-lg font-bold">Lihat semua</div>
@@ -19,18 +19,12 @@ const PhotoReview = () => {
           </svg>
         </div>
       </div>
-      <div className="flex items-center gap-x-4 justify-around mx-3.5 py-3.5">
+      <div className="flex items-center gap-x-4 justify-between ">
         <div className="w-40 h-40 bg-slate-400 rounded-lg" />
         <div className="w-40 h-40 bg-slate-400 rounded-lg" />
         <div className="w-40 h-40 bg-slate-400 rounded-lg" />
         <div className="w-40 h-40 bg-slate-400 rounded-lg" />
         <div className="w-40 h-40 bg-slate-400 rounded-lg" />
-      </div>
-      <div className="mx-3.5 py-3.5">
-        <p className="text-lg font-bold">Ulasan paling membantu</p>
-      </div>
-      <div className="mx-3.5 py-3.5">
-        <div></div>
       </div>
     </div>
   );
