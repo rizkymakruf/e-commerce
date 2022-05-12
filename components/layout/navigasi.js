@@ -1,7 +1,7 @@
 export default function Navigasi() {
   return (
     <>
-      <div className="fixed bottom-0 w-full bg-white py-5 md:hidden flex justify-between items-center px-3.5">
+      <div className="fixed bottom-0 w-full bg-white py-5 md:hidden flex justify-between items-center px-3.5 z-50">
         {/* Home */}
         <a href="/">
           <div className="flex flex-col justify-center items-center">

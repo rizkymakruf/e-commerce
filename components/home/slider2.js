@@ -8,7 +8,7 @@ import Autoplay from "embla-carousel-autoplay";
 const Slider2 = ({ slide2, options = { loop: false } }) => {
   const autoplay = useRef(
     Autoplay(
-      { delay: 3000, stopOnInteraction: false },
+      { delay: 5000, stopOnInteraction: false, draggable: true },
       (emblaRoot) => emblaRoot.parentElement
     )
   );
@@ -57,7 +57,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
 
   return (
     <>
-      <div className="embla mt-10 w-full z-10 absolute">
+      <div className="embla mt-10 w-full absolute">
         <div className="embla__viewport" ref={viewportRef}>
           <div className="embla__container">
             {slide2.map((index) => (

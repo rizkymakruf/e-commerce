@@ -30,7 +30,7 @@ export default function BestProduct() {
 
       {/* Content */}
       <div className="flex md:grid md:grid-cols-6 gap-2 md:gap-3 md:mx-14 md:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
-        <Link href={"/detail"}>
+        <Link href={"/auth/detail"}>
           <button className="w-28 md:w-full flex-none justify-center items-center">
             <img
               className="w-full rounded-tr-md rounded-tl-md"

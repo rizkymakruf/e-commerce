@@ -125,7 +125,7 @@
   height: 10px;
   border-radius: 100%;
   content: "";
-  border-width: 3px;
+  border-width: 1px;
   border-color: white;
 }
 
@@ -146,6 +146,9 @@
   }
   .embla__dot:after {
     height: 20px;
+  }
+  .embla__dot:after {
+    border-width: 3px;
   }
 }
 
