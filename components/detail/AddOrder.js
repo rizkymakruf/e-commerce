@@ -5,12 +5,18 @@ const ProductGalery = () => {
   const [val, setVal] = useState(1);
 
   const Add = () => {
-    setVal(val++);
+    if (val > stock) {
+      alert("Oppss! Kamu memasukan jumlah barang melebihi stock.");
+    } else {
+      setVal(val++);
+    }
   };
 
   const Remove = () => {
     setVal(val - 1);
   };
+
+  const stock = 10;
 
   return (
     <div className="relative">
@@ -74,7 +80,7 @@ const ProductGalery = () => {
               </div>
               <div className="flex items-center gap-x-2">
                 <p>Stock</p>
-                <p className="font-bold">10</p>
+                <p className="font-bold">{stock}</p>
               </div>
             </div>
             <div>

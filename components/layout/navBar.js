@@ -1,7 +1,16 @@
+import Category from "./category";
+import { useState } from "react";
 export default function NavBar() {
+  const [category, setCategory] = useState(false);
+
+  function Hovered() {
+    !category ? null : setCategory(true);
+  }
+
   return (
     <>
-      <div className="md:bg-[#D63031] md:bg-opacity-70 md:backdrop-filter md:backdrop-blur-md bg-white w-full h-24 flex items-center justify-around  md:px-[58px] gap-4 fixed z-40 top-0">
+      <Category category={category} setCategory={setCategory} />
+      <div className="md:bg-[#D63031] md:bg-opacity-70 md:backdrop-filter md:backdrop-blur-md bg-white w-full h-24 flex items-center justify-around  md:px-14 gap-4 fixed z-40 top-0">
         <a className="hidden md:block" href="/">
           <div className="hidden md:block">
             <div className="flex items-center gap-x-2 w-full">
@@ -16,7 +25,11 @@ export default function NavBar() {
           </div>
         </a>
         <div className="hidden md:block">
-          <div className="flex items-center gap-x-2">
+          <button
+            className="flex items-center gap-x-2"
+            onMouseOver={() => setCategory(true)}
+            onMouseLeave={() => setCategory(false)}
+          >
             <svg
               width="20"
               height="20"
@@ -58,7 +71,12 @@ export default function NavBar() {
               />
             </svg>
             <span className="text-white font-light">Kategori</span>
-          </div>
+          </button>
+          <div
+            className="absolute bg-transparent w-24 h-10"
+            onMouseOver={Hovered}
+            onMouseLeave={() => setCategory(false)}
+          />
         </div>
         <div className="w-full flex flex-col gap-2">
           <div className="flex items-center justify-between px-4 md:hidden">

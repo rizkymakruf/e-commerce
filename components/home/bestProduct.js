@@ -4,8 +4,8 @@ export default function BestProduct() {
   return (
     <div className="w-full">
       {/* Headding */}
-      <div className="flex lg:mx-[58px] md:mx-[58px] justify-between mb-1 lg:mb-[24px] lg:text-md ml-3.5">
-        <div className="font-bold text-black mb-1 lg:mb-[24px] text-md lg:text-lg">
+      <div className="flex lg:mx-14 md:mx-14 justify-between mb-1 lg:mb-6 lg:text-md ml-3.5">
+        <div className="font-bold text-black mb-1 lg:mb-6 text-md lg:text-lg">
           Pilihan Kopi Terbaik
         </div>
         <a className="lg:hidden" href="#">

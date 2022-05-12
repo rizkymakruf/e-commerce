@@ -57,7 +57,7 @@ const Slider = ({ slides, options = { loop: true } }) => {
 
   return (
     <>
-      <div className="embla mt-32 md:mt-32 w-full">
+      <div className="embla mt-24 md:mt-24 w-full">
         <div className="embla__viewport" ref={viewportRef}>
           <div className="embla__container">
             {slides.map((index) => (

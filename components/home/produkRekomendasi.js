@@ -2,8 +2,8 @@ export default function ProductRekomendasi() {
   return (
     <>
       {/* Heading */}
-      <div className="flex lg:mx-[58px] md:mx-[58px] justify-between mb-1 lg:mb-[24px] lg:text-md ml-3.5">
-        <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-[24px] text-md lg:text-lg">
+      <div className="flex lg:mx-14 md:mx-14 justify-between mb-1 lg:mb-6 lg:text-md ml-3.5">
+        <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
           Produk Rekomendasi
         </div>
         <a className="" href="#">
@@ -27,7 +27,7 @@ export default function ProductRekomendasi() {
       </div>
 
       {/* Content */}
-      <div className="ml-3.5 md:mx-[58px]">
+      <div className="ml-3.5 md:mx-14">
         <div className="flex md:grid md:grid-cols-3 md:gap-4 gap-2 overflow-x-scroll md:overflow-hidden">
           <div className="drop-shadow-xl">
             <div className="">

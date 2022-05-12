@@ -2,12 +2,12 @@ export default function ProdukBaru() {
   return (
     <>
       {/* Heading */}
-      <div className="flex mx-3.5 md:mx-[58px] lg:mx-[58px] justify-between items-center mb-1">
-        <div className="font-bold text-black mt-5 lg:mt-10 lg:mb-[24px] text-md lg:text-lg">
+      <div className="flex mx-3.5 md:mx-14 lg:mx-14 justify-between items-center mb-1">
+        <div className="font-bold text-black mt-5 lg:mt-10 lg:mb-6 text-md lg:text-lg">
           Produk Terbaru
         </div>
         <a href="#">
-          <div className="mt-5 lg:mt-10 lg:mb-[24px] text-sm md:text-md lg:text-lg flex items-center justify-center">
+          <div className="mt-5 lg:mt-10 lg:mb-6 text-sm md:text-md lg:text-lg flex items-center justify-center">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
               className="justify-center items-center"
@@ -27,7 +27,7 @@ export default function ProdukBaru() {
       </div>
 
       {/* Content */}
-      <div className="flex lg:grid lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4 lg:mx-[58px] md:mx-[58px] lg:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
+      <div className="flex lg:grid lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4 lg:mx-14 md:mx-14 lg:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
         <div className="drop-shadow-xl">
           <div className="">
             <div className="relative">

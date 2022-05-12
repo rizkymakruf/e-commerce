@@ -33,9 +33,9 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Ulasan />
+            {/* <Ulasan />
             <PhotoReview />
-            <UlasanPalingMembantu />
+            <UlasanPalingMembantu /> */}
           </div>
         </div>
         <div className="flex gap-x-6 h-full sticky top-32">
