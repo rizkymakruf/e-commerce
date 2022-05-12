@@ -65,7 +65,10 @@ const KeranjangBelanja = () => {
           <div className="flex flex-col py-2">
             <div className="">
               <div className="flex flex-row gap-x-6 items-center border-t border-b py-4">
-                <input type="checkbox" className="checked:bg-blue-500" />
+                <input
+                  type="checkbox"
+                  className="border border-red-500 w-8 h-4"
+                />
                 <div className="flex flex-col gap-y-2">
                   <div className="flex flex-row items-center gap-x-2">
                     <div className="bg-gray-300 w-8 h-8 rounded-full" />
