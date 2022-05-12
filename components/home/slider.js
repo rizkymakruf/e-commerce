@@ -71,7 +71,7 @@ const Slider = ({ slides, options = { loop: true } }) => {
                     </div>
                     {/* Text */}
                     <div className="flex-col">
-                      <div className="text-[30px] md:text-[55px] lg:text-[80px] text-white fontbebas tracking-wide whitespace-nowrap">
+                      <div className="text-[30px] md:text-[55px] lg:text-[98px] text-white fontbebas tracking-wide whitespace-nowrap">
                         WHITE BLEND
                       </div>
                       <div className="text-[8px] md:text-sm text-white leading-3 mb-5">
