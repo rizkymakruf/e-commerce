@@ -6,7 +6,7 @@ export default function Footer() {
         {/* chat whatapp */}
         <a href="#">
           <div className="flex justify-center items-center mb-5">
-            <div className="flex justify-center items-center bg-[#D63031] py-2 px-5 rounded-md animate-bounce">
+            <div className="flex justify-center items-center bg-red-600 py-2 px-5 rounded-md animate-bounce">
               <svg
                 width="19"
                 height="19"
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
         </a>
         {/* copyright */}
-        <div className="flex justify-center items-center bg-[#D63031] py-5 ">
+        <div className="flex justify-center items-center bg-red-600 py-5 ">
           <span className="text-xs text-white">
             © 2022 Hak Cipta Terpelihara PT. Semua Kopi Indonesia
           </span>
@@ -36,7 +36,7 @@ export default function Footer() {
       </div>
       {/* footer desktop */}
       <div className="hidden md:block lg:block">
-        <div className="w-full bg-[#D63031] justify-between flex md:px-8 pt-10 ">
+        <div className="w-full bg-red-600 justify-between flex md:px-8 pt-10 ">
           {/* left */}
           <div className="text-white">
             <div className="font-bold text-lg">Kontak Kami</div>
@@ -199,7 +199,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full bg-[#D63031] justify-between flex px-8 py-3 text-white">
+        <div className="w-full bg-red-600 justify-between flex px-8 py-3 text-white">
           <div className="flex items-center mt-24 font-bold text-lg">
             Metode Pembayaran
           </div>

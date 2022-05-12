@@ -34,7 +34,7 @@ export default function BrandPilihan() {
             src="/static/images/mesin1.png"
           />
           <div className="hidden md:block lg:block">
-            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
+            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
               La Marzocco
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function BrandPilihan() {
             src="/static/images/mesin8.png"
           />
           <div className="hidden md:block lg:block">
-            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
+            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
               Bezzera
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function BrandPilihan() {
             src="/static/images/mesin3.png"
           />
           <div className="hidden md:block lg:block">
-            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
+            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
               Mahlkonig
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function BrandPilihan() {
             src="/static/images/mesin6.png"
           />
           <div className="hidden md:block lg:block">
-            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
+            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
               Mazzer
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function BrandPilihan() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/mesin5.png"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
             Mazzer
           </div>
         </div>

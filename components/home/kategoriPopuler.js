@@ -33,7 +33,7 @@ export default function KategoriPopuler() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/populer1.png"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Green Beans Coffee
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function KategoriPopuler() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/populer2.png"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Coffee Grinder
           </div>
         </div>
@@ -52,7 +52,7 @@ export default function KategoriPopuler() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/populer3.png"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Coffee Machines
           </div>
         </div>

@@ -62,7 +62,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
           <div className="embla__container">
             {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
+                <div className="embla__slide__inner bg-red-600 md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
@@ -98,7 +98,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
             ))}
             {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
+                <div className="embla__slide__inner bg-red-600 md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
@@ -134,7 +134,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
             ))}
             {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
+                <div className="embla__slide__inner bg-red-600 md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
@@ -170,7 +170,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
             ))}
             {slide2.map((index) => (
               <div className="embla__slide key={index}">
-                <div className="embla__slide__inner bg-[#D63031] md:h-[300px] items-center flex py-3.5">
+                <div className="embla__slide__inner bg-red-600 md:h-[300px] items-center flex py-3.5">
                   {/* Content  */}
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}

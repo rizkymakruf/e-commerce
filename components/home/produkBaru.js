@@ -75,7 +75,7 @@ export default function ProdukBaru() {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
             <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
             <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
             <span className="text-xs font-semi  bold">Rp 100.000</span>
@@ -152,7 +152,7 @@ export default function ProdukBaru() {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
             <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
             <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
             <span className="text-xs font-semi  bold">Rp 100.000</span>
@@ -229,7 +229,7 @@ export default function ProdukBaru() {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
             <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
             <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
             <span className="text-xs font-semi  bold">Rp 100.000</span>
@@ -306,7 +306,7 @@ export default function ProdukBaru() {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
             <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
             <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
             <span className="text-xs font-semi  bold">Rp 100.000</span>
@@ -383,7 +383,7 @@ export default function ProdukBaru() {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
             <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
             <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
             <span className="text-xs font-semi  bold">Rp 100.000</span>

@@ -36,7 +36,7 @@ export default function BestProduct() {
               className="w-full rounded-tr-md rounded-tl-md"
               src="/static/images/product1.jpg"
             />
-            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md shadow-lg ">
+            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md shadow-lg ">
               Expresso Coffee Blend <br />
               Red Blend 1kg
             </div>
@@ -48,7 +48,7 @@ export default function BestProduct() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product3.jpg"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Flores Manggarai <br />
             Yellow Caturra 250gr
           </div>
@@ -59,7 +59,7 @@ export default function BestProduct() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product1.jpg"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
             Merah Series 1Kg
           </div>
@@ -70,7 +70,7 @@ export default function BestProduct() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product3.jpg"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Bali Wanagiri 250gr
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function BestProduct() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product1.jpg"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
             Putih Series 1Kg
           </div>
@@ -91,7 +91,7 @@ export default function BestProduct() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product3.jpg"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
             Putih Series 1Kg
           </div>
@@ -102,7 +102,7 @@ export default function BestProduct() {
             className="w-full rounded-tr-md rounded-tl-md"
             src="/static/images/product1.jpg"
           />
-          <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+          <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
             Putih Series 1Kg
           </div>
@@ -114,7 +114,7 @@ export default function BestProduct() {
               className="w-full rounded-tr-md rounded-tl-md"
               src="/static/images/product3.jpg"
             />
-            <div className="bg-[#D63031] text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
+            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-[12px] rounded-br-md font-semibold rounded-bl-md">
               Expresso Coffee Blend <br />
               Putih Series 1Kg
             </div>
@@ -141,7 +141,7 @@ export default function BestProduct() {
                 src="/static/images/product3.jpg"
               />
             </div>
-            <div className="bg-[#D63031]  flex justify-center items-center h-8 rounded-md w-full bottom-0">
+            <div className="bg-red-600  flex justify-center items-center h-8 rounded-md w-full bottom-0">
               <span className="text-white text-xs md:text-xs pr-2 font-semibold ">
                 Lihat semuanya
               </span>

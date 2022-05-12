@@ -56,7 +56,7 @@ export default function ProductRekomendasi() {
               </div>
             </div>
 
-            <div className="w-60 md:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+            <div className="w-60 md:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
               <p className="text-xs pt-2 font-semibold">
                 Expresso Coffee Blend
               </p>
@@ -113,7 +113,7 @@ export default function ProductRekomendasi() {
               </div>
             </div>
 
-            <div className="w-60 md:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+            <div className="w-60 md:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
               <p className="text-xs pt-2 font-semibold">
                 Expresso Coffee Blend
               </p>
@@ -170,7 +170,7 @@ export default function ProductRekomendasi() {
               </div>
             </div>
 
-            <div className="w-60 md:w-full bg-[#D63031] text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
+            <div className="w-60 md:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
               <p className="text-xs pt-2 font-semibold">
                 Expresso Coffee Blend
               </p>
