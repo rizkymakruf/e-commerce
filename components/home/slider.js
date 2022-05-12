@@ -19,23 +19,23 @@ const Slider = ({ slides, options = { loop: true } }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 
-  // const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  // const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
   const scrollTo = useCallback(
     (index) => embla && embla.scrollTo(index),
     [embla]
   );
-  const scrollNext = useCallback(() => {
-    if (!emblaApi) return;
-    emblaApi.scrollNext();
-    autoplay.current.reset();
-  }, [emblaApi]);
+  // const scrollNext = useCallback(() => {
+  //   if (!emblaApi) return;
+  //   emblaApi.scrollNext(), [embla];
+  //   autoplay.current.reset();
+  // }, [emblaApi]);
 
-  const scrollPrev = useCallback(() => {
-    if (!emblaApi) return;
-    emblaApi.scrollPrev();
-    autoplay.current.reset();
-  }, [emblaApi]);
+  // const scrollPrev = useCallback(() => {
+  //   if (!emblaApi) return;
+  //   emblaApi.scrollPrev(), [embla];
+  //   autoplay.current.reset();
+  // }, [emblaApi]);
 
   const onSelect = useCallback(() => {
     if (!embla) return;
@@ -190,8 +190,8 @@ const Slider = ({ slides, options = { loop: true } }) => {
             ))}
           </div>
         </div>
-        {/* <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> */}
+        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
       </div>
       <div className="embla__dots -translate-y-8 md:-translate-y-12 lg:-translate-y-16">
         {scrollSnaps.map((_, index) => (
@@ -216,24 +216,62 @@ export const DotButton = ({ selected, onClick }) => (
 
 export const PrevButton = ({ enabled, onClick }) => (
   <button
-    className="embla__button embla__button--prev"
+    className="embla__button embla__button--prev hidden md:block w-15 h-15"
     onClick={onClick}
     disabled={!enabled}
   >
-    <svg className="embla__button__svg" viewBox="137.718 -1.001 366.563 644">
-      <path d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z" />
+    <svg
+      width="34"
+      height="34"
+      viewBox="0 0 34 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.5">
+        <rect
+          width="33"
+          height="33"
+          rx="16.5"
+          transform="matrix(-4.37114e-08 1 1 4.37114e-08 0.688232 0.0941162)"
+          fill="white"
+        />
+        <path
+          d="M20.7358 7.34756C21.0144 7.62029 21.1709 7.99014 21.1709 8.37578C21.1709 8.76141 21.0144 9.13126 20.7358 9.40399L13.379 16.6029L20.7358 23.8019C21.0065 24.0762 21.1563 24.4436 21.1529 24.8249C21.1495 25.2062 20.9932 25.571 20.7177 25.8406C20.4421 26.1103 20.0694 26.2632 19.6797 26.2665C19.29 26.2698 18.9146 26.1232 18.6343 25.8583L10.2268 17.6312C9.94815 17.3584 9.79163 16.9886 9.79163 16.6029C9.79163 16.2173 9.94815 15.8475 10.2268 15.5747L18.6343 7.34756C18.913 7.07492 19.2909 6.92175 19.685 6.92175C20.0791 6.92175 20.4571 7.07492 20.7358 7.34756Z"
+          fill="#AEAEAE"
+        />
+      </g>
     </svg>
   </button>
 );
 
 export const NextButton = ({ enabled, onClick }) => (
   <button
-    className="embla__button embla__button--next"
+    className="embla__button embla__button--next hidden md:block w-15 h-15"
     onClick={onClick}
     disabled={!enabled}
   >
-    <svg className="embla__button__svg" viewBox="0 0 238.003 238.003">
-      <path d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z" />
+    <svg
+      width="34"
+      height="34"
+      viewBox="0 0 34 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.5">
+        <rect
+          x="33.688"
+          y="0.0941162"
+          width="33"
+          height="33"
+          rx="16.5"
+          transform="rotate(90 33.688 0.0941162)"
+          fill="white"
+        />
+        <path
+          d="M13.6405 7.34756C13.3619 7.62029 13.2054 7.99014 13.2054 8.37578C13.2054 8.76141 13.3619 9.13126 13.6405 9.40399L20.9973 16.6029L13.6406 23.8019C13.3698 24.0762 13.22 24.4436 13.2234 24.8249C13.2268 25.2062 13.3831 25.571 13.6587 25.8406C13.9342 26.1103 14.307 26.2632 14.6967 26.2665C15.0863 26.2698 15.4618 26.1233 15.7421 25.8583L24.1496 17.6312C24.4282 17.3584 24.5847 16.9886 24.5847 16.6029C24.5847 16.2173 24.4282 15.8475 24.1496 15.5747L15.7421 7.34756C15.4634 7.07492 15.0854 6.92175 14.6913 6.92175C14.2972 6.92175 13.9193 7.07492 13.6405 7.34756Z"
+          fill="#AEAEAE"
+        />
+      </g>
     </svg>
   </button>
 );
