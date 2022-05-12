@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.1",
     "arangojs": "^7.7.0",
     "chart.js": "^3.7.1",
     "cloudinary": "^1.29.1",

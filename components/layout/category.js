@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Category = (props) => {
-  const [category, setCategory] = useState("coffee");
+  const [categorys, setCategory] = useState("coffee");
 
   return (
     <>
@@ -16,12 +16,13 @@ const Category = (props) => {
        }
        `}
       >
-        <div className="flex h-auto w-4/5">
+        <div className="flex h-auto w-10/12">
           {/* category menu */}
           <div className="w-2/6 bg-white p-5 gap-y-2 flex flex-col rounded-bl-lg pb-20 border-r">
             <button
               className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
               onClick={() => setCategory("coffee")}
+              // onMouseOver={() => setCategory("coffee")}
             >
               Coffee
             </button>
@@ -71,7 +72,7 @@ const Category = (props) => {
           {/* show category menu */}
           <div className="w-full bg-white rounded-br-lg pb-20 p-5">
             <div className="flex gap-x-2">
-              {category === "coffee" ? (
+              {categorys === "coffee" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -86,7 +87,7 @@ const Category = (props) => {
                     <div>Green Beans</div>
                   </div>
                 </>
-              ) : category === "machines" ? (
+              ) : categorys === "machines" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -101,7 +102,7 @@ const Category = (props) => {
                     <div>Mesin 3</div>
                   </div>
                 </>
-              ) : category === "grinder" ? (
+              ) : categorys === "grinder" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -116,7 +117,7 @@ const Category = (props) => {
                     <div>Grinder 3</div>
                   </div>
                 </>
-              ) : category === "brewers" ? (
+              ) : categorys === "brewers" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -131,7 +132,7 @@ const Category = (props) => {
                     <div>Brewers 3</div>
                   </div>
                 </>
-              ) : category === "coffeeTools" ? (
+              ) : categorys === "coffeeTools" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -146,7 +147,7 @@ const Category = (props) => {
                     <div>Coffee Tools 3</div>
                   </div>
                 </>
-              ) : category === "baristaTools" ? (
+              ) : categorys === "baristaTools" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -161,7 +162,7 @@ const Category = (props) => {
                     <div>Barista Tools 3</div>
                   </div>
                 </>
-              ) : category === "roasters" ? (
+              ) : categorys === "roasters" ? (
                 <>
                   <div className="flex gap-x-2 items-center">
                     <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
@@ -177,19 +178,19 @@ const Category = (props) => {
                   </div>
                 </>
               ) : (
-                category === "bundlingPackage" && (
+                categorys === "bundlingPackage" && (
                   <>
                     <div className="flex gap-x-2 items-center">
                       <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
-                      <div>BundlingPackage 1</div>
+                      <div>Bundling Package 1</div>
                     </div>
                     <div className="flex gap-x-2 items-center">
                       <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
-                      <div>BundlingPackage 2</div>
+                      <div>Bundling Package 2</div>
                     </div>
                     <div className="flex gap-x-2 items-center">
                       <div className="w-10 h-10 bg-gray-300 rounded-md"></div>
-                      <div>BundlingPackage 3</div>
+                      <div>Bundling Package 3</div>
                     </div>
                   </>
                 )

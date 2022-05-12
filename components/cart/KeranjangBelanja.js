@@ -52,7 +52,10 @@ const KeranjangBelanja = () => {
       </div>
       <div className="flex w-full justify-between">
         <div className="flex flex-row gap-x-6 items-center">
-          <input type="checkbox" className="bg-red-500" />
+          <input
+            type="checkbox"
+            className="checked:bg-red-600 focus:bg-red-600 appearance-none h-6 w-6 rounded-full"
+          />
           <p>Pilih Semuanya</p>
         </div>
         <div>
@@ -65,7 +68,10 @@ const KeranjangBelanja = () => {
           <div className="flex flex-col py-2">
             <div className="">
               <div className="flex flex-row gap-x-6 items-center border-t border-b py-4">
-                <input type="checkbox" className="w-8 h-8" />
+                <input
+                  type="checkbox"
+                  className="w-6 h-6 checked:bg-red-600 focus:bg-red-600 rounded-full"
+                />
                 <div className="flex flex-col gap-y-2">
                   <div className="flex flex-row items-center gap-x-2">
                     <div className="bg-gray-300 w-8 h-8 rounded-full" />
