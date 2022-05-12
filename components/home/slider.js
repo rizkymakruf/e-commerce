@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-// import { DotButton, PrevButton, NextButton } from "./EmblaCarouselButtons";
-// import { mediaByIndex } from "../media";
-// import "../css/embla.css";
 
 const Slider = ({ slides, options = { loop: true } }) => {
   const autoplay = useRef(
@@ -12,7 +9,6 @@ const Slider = ({ slides, options = { loop: true } }) => {
       (emblaRoot) => emblaRoot.parentElement
     )
   );
-  // const [emblaRef, emblaApi] = useEmblaCarousel(options, [autoplay.current]);
 
   const [viewportRef, embla, emblaRef, emblaApi] = useEmblaCarousel(
     { skipSnaps: false },
