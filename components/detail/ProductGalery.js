@@ -6,25 +6,13 @@ import ProductThree from "../../public/static/images/product3.jpg";
 import ProductFour from "../../public/static/images/product4.jpg";
 const ProductGalery = () => {
   const Galery = [ProductOne, ProductTwo, ProductThree, ProductFour];
-
   const [galery, setGalery] = useState(Galery[0]);
-
-  function DefaultVal() {}
 
   return (
     <div className="">
       <div className="flex flex-col justify-center w-full gap-y-4">
-        <div className={`w-72 h-72 rounded-md`}>
-          {/* <div className="absolute">
-            <Image
-              className="rounded-md"
-              src={ProductTwo}
-              layout={"responsive"}
-              objectFit={"contain"}
-              priority
-            />
-          </div> */}
-          <div className="">
+        <div className={`w-72 h-72 rounded-md bg-white overflow-hidden`}>
+          <div className="duration-500 hover:scale-125">
             <Image
               className="rounded-md"
               src={galery}
@@ -37,12 +25,18 @@ const ProductGalery = () => {
         <div className="flex flex-row items-center justify-between gap-2 w-72">
           {Galery.map((image, index) => {
             return (
-              <Image
-                src={image}
-                className="rounded-md"
-                onClick={() => setGalery(Galery[index])}
-                onMouseOver={() => setGalery(Galery[index])}
-              />
+              <div
+                className={`duration-150 ${
+                  galery === Galery[index] ? "border-b-2 border-red-500" : ""
+                }`}
+              >
+                <Image
+                  src={image}
+                  className={`rounded-md`}
+                  onClick={() => setGalery(Galery[index])}
+                  onMouseOver={() => setGalery(Galery[index])}
+                />
+              </div>
             );
           })}
         </div>

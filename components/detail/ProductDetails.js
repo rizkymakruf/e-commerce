@@ -2,6 +2,20 @@ import { useState } from "react";
 
 const ProductDetails = () => {
   const [info, setInfo] = useState(false);
+  const [readMore, setReadMore] = useState(false);
+  const text1 = `Info Penting lfow A react component that uses a high-res source
+  image to produce a zoom window on mouse hover. Latest version:
+  1.3.0, last published: 3 years javascript - React component
+  that zooms into an image while Stack Overflow › questions ›
+  react-component-that-zooms-into-an-ima Gambar thumbnail 30
+  Jul 2020 Creating a custom css class and applying that to
+  the img element. index.css: .hov`;
+
+  const text2 = ` This is proprietary taste of Flores Manggarai Yellow Caturra.
+  Feels freshy with hint of jasmine tea and you’re gonna taste
+  like citrus lemon. It features a rich aroma with a smooth
+  mouthfeels. Find your taste and explore many methods to brew
+  this filter coffee! [GRAB IT FAST, LIMITED STOCK]`;
   return (
     <div className="w-full">
       <div className="flex flex-col gap-y-4">
@@ -77,38 +91,38 @@ const ProductDetails = () => {
             <p className="text-sm font-bold">Info penting</p>
           </button>
         </div>
-        {info ? (
-          <div className="w-full">
-            <p>Info Penting</p>
-            <p>Info Penting</p>
-            <p>Info Penting</p>
-            <p>Info Penting</p>
-          </div>
-        ) : (
-          <div className="w-full">
-            <p>Cupping Notes :</p>
-            <p>Roasting Level :</p>
-            <p>Kondisi : Baru</p>
-            <p>Berat : 250 Gram </p>
-            <p>Kategori : Single Origin</p>
-            <p>Etalase : Coldbrew Roasters</p>
-            <p>
-              We're proudly presented “Folres Manggarai Yellow Caturra” our
-              single origin it’s finally here!
-            </p>
-            <p>
-              This is proprietary taste of Flores Manggarai Yellow Caturra.
-              Feels freshy with hint of jasmine tea and you’re gonna taste like
-              citrus lemon. It features a rich aroma with a smooth mouthfeels.
-              Find your taste and explore many methods to brew this filter
-              coffee! [GRAB IT FAST, LIMITED STOCK]
-            </p>
-          </div>
-        )}
         <div>
-          <button>
+          {info ? (
+            <div
+              className={`duration-500 w-full transition-transform ${
+                readMore ? "h-full" : "h-44"
+              }`}
+            >
+              <p>
+                {readMore
+                  ? text1.substring(0, 250) + "..."
+                  : text1.substring(0, text1.length)}
+              </p>
+            </div>
+          ) : (
+            <div
+              className={`duration-500 w-full transition-transform ${
+                readMore ? "h-full" : "h-44"
+              }`}
+            >
+              <p>
+                {" "}
+                {readMore
+                  ? text2.substring(0, 250) + "..."
+                  : text2.substring(0, text1.length)}
+              </p>
+            </div>
+          )}
+        </div>
+        <div>
+          <button onClick={() => setReadMore(!readMore)}>
             <p className="text-red-600 font-bold text-md">
-              Lihat Lebih Sedikit
+              {readMore ? "Lihat Selengkapnya" : "Lihat Lebih Sedikit"}
             </p>
           </button>
         </div>
@@ -207,7 +221,9 @@ const ProductDetails = () => {
           </div>
           <div className="flex flex-row justify-between items-center gap-x-3">
             <div className="pl-6">Kurir lainnya :</div>
-            <button className="text-red-600 font-bold">Lihat Pilihan Kurir</button>
+            <button className="text-red-600 font-bold">
+              Lihat Pilihan Kurir
+            </button>
           </div>
         </div>
         <div className="border w-full h-auto p-3 gap-x-4 flex items-center justify-end rounded-md">

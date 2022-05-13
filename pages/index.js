@@ -9,16 +9,17 @@ import BrandPilihan from "components/home/brandPilihan";
 import KategoriPopuler from "components/home/kategoriPopuler";
 import Footer from "components/layout/footer";
 import Navigasi from "components/layout/navigasi";
+import { getLayout } from "components/layout/layout";
 
 const SLIDE_COUNT = 1;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const slide2 = Array.from(Array(SLIDE_COUNT).keys());
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Slider slides={slides} />
       <BestProduct />
       <ProdukBaru />
@@ -26,8 +27,11 @@ export default function Home() {
       <BrandPilihan />
       <Slider2 slide2={slide2} />
       <KategoriPopuler />
-      <Footer />
-      <Navigasi />
+      {/* <Footer /> */}
+      {/* <Navigasi /> */}
     </>
   );
-}
+};
+
+Home.getLayout = getLayout;
+export default Home;

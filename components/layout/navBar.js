@@ -199,18 +199,22 @@ export default function NavBar() {
             </button>
           </Link>
         </div>
-        <div className="hidden md:block">
-          <a>
-            <span className="text-sm font-semibold text-white">Masuk</span>
-          </a>
-        </div>
-        <div className="hidden md:block">
-          <a>
-            <span className="py-1 px-2 bg-white text-red-600 font-semibold text-sm rounded-md">
-              Daftar
-            </span>
-          </a>
-        </div>
+        <Link href={"/auth/login"} passHref>
+          <button className="hidden md:block">
+            <a>
+              <span className="text-sm font-semibold text-white">Masuk</span>
+            </a>
+          </button>
+        </Link>
+        <Link href={"/auth/login"} passHref>
+          <button className="hidden md:block">
+            <a>
+              <span className="py-1 px-2 bg-white text-red-600 font-semibold text-sm rounded-md">
+                Daftar
+              </span>
+            </a>
+          </button>
+        </Link>
       </div>
     </>
   );

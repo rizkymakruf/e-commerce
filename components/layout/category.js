@@ -20,51 +20,67 @@ const Category = (props) => {
           {/* category menu */}
           <div className="w-2/6 bg-white p-5 gap-y-2 flex flex-col rounded-bl-lg pb-20 border-r">
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("coffee")}
+              className={`${
+                categorys === "coffee" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("coffee")}
               // onMouseOver={() => setCategory("coffee")}
             >
               Coffee
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("machines")}
+              className={`${
+                categorys === "machines" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("machines")}
             >
               Coffee Machines
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("grinder")}
+              className={`${
+                categorys === "grinder" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("grinder")}
             >
               Coffee Grinder
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("brewers")}
+              className={`${
+                categorys === "brewers" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("brewers")}
             >
               Manual Brewers
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("coffeeTools")}
+              className={`${
+                categorys === "coffeeTools" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("coffeeTools")}
             >
               Coffee Tools
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("baristaTools")}
+              className={`${
+                categorys === "baristaTools" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("baristaTools")}
             >
               Barista Tools
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("roasters")}
+              className={`${
+                categorys === "roasters" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("roasters")}
             >
               Roasters {"&"} Others
             </button>
             <button
-              className="hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex"
-              onClick={() => setCategory("bundlingPackage")}
+              className={`${
+                categorys === "bundlingPackage" && "bg-gray-200"
+              } hover:bg-gray-200 w-full py-1 rounded-lg pl-2 text-red-600 font-semibold justify-start flex`}
+              onMouseOver={() => setCategory("bundlingPackage")}
             >
               Bundling Package
             </button>
