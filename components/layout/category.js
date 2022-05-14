@@ -85,7 +85,7 @@ const Category = (props) => {
               Bundling Package
             </button>
           </div>
-          {/* show category menu */}
+          {/* show category menu per tab */}
           <div className="w-full bg-white rounded-br-lg pb-20 p-5">
             <div className="flex gap-x-2">
               {categorys === "coffee" ? (
