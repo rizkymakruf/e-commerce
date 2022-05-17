@@ -1,6 +1,6 @@
 // importing layout & component
 import NavBar from "components/layout/navBar";
-import RouteBar from "components/detail/RouteBar";
+import RouteBar from "components/layout/RouteBar";
 import Footer from "components/layout/footer";
 import Navigasi from "components/layout/navigasi";
 

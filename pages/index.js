@@ -1,37 +1,47 @@
-// importing layout & component
-import NavBar from "components/layout/navBar";
-import Slider from "components/home/slider";
-import Slider2 from "components/home/slider2";
-import BestProduct from "components/home/bestProduct";
-import ProdukBaru from "components/home/produkBaru";
-import ProductRekomendasi from "components/home/produkRekomendasi";
-import BrandPilihan from "components/home/brandPilihan";
-import KategoriPopuler from "components/home/kategoriPopuler";
-import Footer from "components/layout/footer";
-import Navigasi from "components/layout/navigasi";
-import { getLayout } from "components/layout/layout";
+// // importing layout & component
+// import NavBar from "components/layout/navBar";
+// import Slider from "components/home/slider";
+// import Slider2 from "components/home/slider2";
+// import BestProduct from "components/home/bestProduct";
+// import ProdukBaru from "components/home/produkBaru";
+// import ProductRekomendasi from "components/home/produkRekomendasi";
+// import BrandPilihan from "components/home/brandPilihan";
+// import KategoriPopuler from "components/home/kategoriPopuler";
+// import Footer from "components/layout/footer";
+// import Navigasi from "components/layout/navigasi";
+// import { getLayout } from "components/layout/layout";
 
-const SLIDE_COUNT = 1;
-const slides = Array.from(Array(SLIDE_COUNT).keys());
+// const SLIDE_COUNT = 1;
+// const slides = Array.from(Array(SLIDE_COUNT).keys());
 
-const slide2 = Array.from(Array(SLIDE_COUNT).keys());
+// const slide2 = Array.from(Array(SLIDE_COUNT).keys());
 
-const Home = () => {
-  return (
-    <>
-      {/* <NavBar /> */}
-      <Slider slides={slides} />
-      <BestProduct />
-      <ProdukBaru />
-      <ProductRekomendasi />
-      <BrandPilihan />
-      <Slider2 slide2={slide2} />
-      <KategoriPopuler />
-      {/* <Footer /> */}
-      {/* <Navigasi /> */}
-    </>
-  );
-};
+// const Home = () => {
+//   return (
+//     <>
+//       {/* <NavBar /> */}
+//       <Slider slides={slides} />
+//       <BestProduct />
+//       <ProdukBaru />
+//       <ProductRekomendasi />
+//       <BrandPilihan />
+//       <Slider2 slide2={slide2} />
+//       <KategoriPopuler />
+//       {/* <Footer /> */}
+//       {/* <Navigasi /> */}
+//     </>
+//   );
+// };
 
-Home.getLayout = getLayout;
-export default Home;
+// Home.getLayout = getLayout;
+// export default Home;
+
+export default function Index() {}
+export async function getServerSideProps(context) {
+  return {
+    redirect: {
+      destination: "/auth",
+      permanent: false,
+    },
+  };
+}

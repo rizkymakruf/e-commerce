@@ -206,7 +206,7 @@ export default function NavBar() {
             </a>
           </button>
         </Link>
-        <Link href={"/auth/login"} passHref>
+        <Link href={"/auth/register"} passHref>
           <button className="hidden md:block">
             <a>
               <span className="py-1 px-2 bg-white text-red-600 font-semibold text-sm rounded-md">
