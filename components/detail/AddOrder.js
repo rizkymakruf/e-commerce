@@ -149,8 +149,8 @@ const ProductGalery = () => {
                     <path
                       d="M11.6846 20.3209V12.5555M11.6846 12.5555V4.7901M11.6846 12.5555H19.45M11.6846 12.5555H3.91919"
                       stroke="white"
-                      stroke-width="2.36301"
-                      stroke-linecap="round"
+                      strokeWidth="2.36301"
+                      strokeLinecap="round"
                     />
                   </svg>
                   <p className="text-white">Keranjang</p>

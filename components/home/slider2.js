@@ -87,7 +87,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="z-40 -translate-x-3 md:-translate-x-0 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                      <button className="z-40 -translate-x-3 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
                         Belanja Sekarang
                       </button>
                     </div>
@@ -123,7 +123,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="z-40 -translate-x-3 md:-translate-x-0 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                      <button className="z-40 -translate-x-3 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
                         Belanja Sekarang
                       </button>
                     </div>
@@ -159,7 +159,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="z-40 -translate-x-3 md:-translate-x-0 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                      <button className="z-40 -translate-x-3 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
                         Belanja Sekarang
                       </button>
                     </div>
@@ -195,7 +195,7 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
                     </div>
                     {/* Button */}
                     <div>
-                      <button className="z-40 -translate-x-3 md:-translate-x-0 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
+                      <button className="z-40 -translate-x-3 translate-y-10 md:translate-x-28 md:-translate-y-5 absolute text-xs px-1 md:text-lg md:px-3 p-0.5 bg-white text-red-600 rounded-full whitespace-nowrap">
                         Belanja Sekarang
                       </button>
                     </div>

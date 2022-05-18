@@ -187,14 +187,14 @@ const ProductDetails = () => {
               <path
                 d="M5 7.03125C6.03553 7.03125 6.875 6.19178 6.875 5.15625C6.875 4.12072 6.03553 3.28125 5 3.28125C3.96447 3.28125 3.125 4.12072 3.125 5.15625C3.125 6.19178 3.96447 7.03125 5 7.03125Z"
                 stroke="#414141"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M8.74993 7.03125C7.34368 10.3125 4.99993 14.0625 4.99993 14.0625C4.99993 14.0625 2.65618 10.3125 1.24993 7.03125C-0.156319 3.75 2.18743 0.9375 4.99993 0.9375C7.81243 0.9375 10.1562 3.75 8.74993 7.03125Z"
                 stroke="#414141"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             <div>Dikirim dari Kab. Badung</div>

@@ -29,7 +29,7 @@ const Navigation = ({ menu, setMenu }) => {
             <p>Pilihan Kopi Terbaik</p>
           </div>
         </div>
-        <div className="flex flex gap-x-4">
+        <div className="flex gap-x-4">
           <button
             className={`duration-150 ${
               menu === "semua" ? "border-b-4 border-red-600" : ""

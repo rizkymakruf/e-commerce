@@ -133,8 +133,8 @@ const KeranjangBelanja = () => {
                       <path
                         d="M18.5481 13.8695H13.2736H7.99902"
                         stroke="white"
-                        stroke-width="1.39426"
-                        stroke-linecap="round"
+                        strokeWidth="1.39426"
+                        strokeLinecap="round"
                       />
                     </svg>
                     <div className="">1</div>
@@ -156,8 +156,8 @@ const KeranjangBelanja = () => {
                       <path
                         d="M13.1984 19.8032V13.8694M13.1984 13.8694V7.93555M13.1984 13.8694H18.4729M13.1984 13.8694H7.92383"
                         stroke="white"
-                        stroke-width="1.39426"
-                        stroke-linecap="round"
+                        strokeWidth="1.39426"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </div>

@@ -66,8 +66,8 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
                         <path
                           d="M1.66669 8.83337C1.66669 8.83337 4.58335 12.1667 10 12.1667C15.4167 12.1667 18.3334 8.83337 18.3334 8.83337M3.33335 10.2042L1.66669 12.1667M18.3334 12.1667L16.67 10.2067M7.42835 11.9L6.66669 14.25M12.5525 11.9067L13.3334 14.25"
                           stroke="#C4C4C4"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     )}
@@ -138,7 +138,7 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
                         height="38.0263"
                         rx="19.0132"
                         stroke="#C4C4C4"
-                        stroke-width="0.319549"
+                        strokeWidth="0.319549"
                       />
                     </svg>
                   </button>
@@ -164,7 +164,7 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
                         height="37.9739"
                         rx="18.987"
                         stroke="#C4C4C4"
-                        stroke-width="0.319549"
+                        strokeWidth="0.319549"
                       />
                     </svg>
                   </button>
