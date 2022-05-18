@@ -5,7 +5,7 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
   const router = useRouter();
   const [type, setType] = useState(false);
   return (
-    <div className="w-full md:w-2/6 h-auto p-4 md:p-0">
+    <div className="w-full md:w-1/4 h-auto p-4 md:p-0">
       <form onSubmit={onSubmit}>
         <div className="w-full h-full select-none">
           <div className="w-full h-full p-6 bg-white/80 rounded-md shadow-xl">

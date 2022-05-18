@@ -2,10 +2,22 @@ import FormLogin from "components/form/FormRegister";
 import { useContext } from "react";
 import { GlobalContext } from "context/global";
 import { FetchError } from "lib/fetchJson";
+import Image from "next/image";
+import Link from "next/link";
+
+// import images
+import Logo from "/public/static/images/logo.png";
 function Index() {
   const { globalCtx, globalAct } = useContext(GlobalContext);
   return (
     <div className="overflow-hidden">
+      <Link href={"/"}>
+        <div className="w-full pt-8 left-20 absolute">
+          <button>
+            <Image src={Logo} />
+          </button>
+        </div>
+      </Link>
       <div className="w-full bg-white flex flex-col  items-center justify-between py-12 overflow-hidden">
         <FormLogin
           // Default Form
