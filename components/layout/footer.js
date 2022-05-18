@@ -1,3 +1,13 @@
+import Image from "next/image";
+
+import Bca from "../../public/static/images/bca.png";
+import Bni from "../../public/static/images/bni.png";
+import Visa from "../../public/static/images/visa.png";
+import Idm from "../../public/static/images/idm.png";
+import Master from "../../public/static/images/master.png";
+import Jne from "../../public/static/images/jne.png";
+import Jnt from "../../public/static/images/jnt.png";
+
 export default function Footer() {
   return (
     <>
@@ -208,15 +218,15 @@ export default function Footer() {
 
         <div className="w-full bg-[#AEAEAE] justify-between flex px-8 py-10">
           <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 items-center gap-x-2">
-            <img src="/static/images/bca.png" />
-            <img src="/static/images/bni.png" />
-            <img src="/static/images/visa.png" />
-            <img src="/static/images/idm.png" />
-            <img src="/static/images/master.png" />
+            <Image src={Bca} layout={"fixed"} />
+            <Image src={Bni} layout={"fixed"} />
+            <Image src={Visa} layout={"fixed"} />
+            <Image src={Idm} layout={"fixed"} />
+            <Image src={Master} layout={"fixed"} />
           </div>
           <div className="flex items-center pr-44 gap-x-3">
-            <img src="/static/images/jnt.png" />
-            <img src="/static/images/jne.png" />
+            <Image src={Jnt} layout={"fixed"} />
+            <Image src={Jne} layout={"fixed"} />
           </div>
         </div>
 

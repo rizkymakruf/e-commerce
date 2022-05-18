@@ -51,7 +51,7 @@ const TerakhirDilihat = () => {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-2 rounded-b-md gap-y-1 flex flex-col">
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
             <div>
               <p className="text-xs font-semibold text-white">
                 Expresso Coffee Blend
@@ -119,7 +119,7 @@ const TerakhirDilihat = () => {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-2 rounded-b-md gap-y-1 flex flex-col">
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
             <div>
               <p className="text-xs font-semibold text-white">
                 Expresso Coffee Blend
@@ -187,7 +187,7 @@ const TerakhirDilihat = () => {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-2 rounded-b-md gap-y-1 flex flex-col">
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
             <div>
               <p className="text-xs font-semibold text-white">
                 Expresso Coffee Blend
@@ -255,7 +255,7 @@ const TerakhirDilihat = () => {
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-2 rounded-b-md gap-y-1 flex flex-col">
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
             <div>
               <p className="text-xs font-semibold text-white">
                 Expresso Coffee Blend
