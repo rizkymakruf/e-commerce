@@ -13,14 +13,14 @@ function Index() {
   return (
     <>
       <div className="overflow-hidden">
-        <Link href={"/"}>
+        {/* <Link href={"/"}>
           <div className="w-full pt-8 left-20 absolute">
             <button>
               <Image src={Logo} />
             </button>
           </div>
-        </Link>
-        <div className="w-full h-screen bg-white flex flex-col  items-center justify-between py-12 overflow-hidden">
+        </Link> */}
+        <div className="w-full h-screen bg-yellow-300">
           <FormLogin
             // Default Form
             globalCtx={globalCtx}
@@ -53,11 +53,11 @@ function Index() {
               globalAct.setIsFetch(false);
             }}
           />
-          <div>
+          {/* <div>
             <p className="md:text-base text-sm px-4 text-center">
               © 2022 Hak Cipta Terpelihara PT. Semua Kopi Indonesia
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
