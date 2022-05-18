@@ -1,3 +1,11 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Product2 from "../../public/static/images/product2.jpg";
+import Product4 from "../../public/static/images/product4.jpg";
+import Product5 from "../../public/static/images/product5.jpg";
+import Product7 from "../../public/static/images/product7.jpg";
+
 export default function ProdukBaru() {
   return (
     <>
@@ -6,8 +14,8 @@ export default function ProdukBaru() {
         <div className="font-bold text-black mt-5 lg:mt-10 lg:mb-6 text-md lg:text-lg">
           Produk Terbaru
         </div>
-        <a href="#">
-          <div className="mt-5 lg:mt-10 lg:mb-6 text-sm md:text-md lg:text-lg flex items-center justify-center">
+        <Link href={"/auth/productTerbaru"}>
+          <button className="mt-5 lg:mt-10 lg:mb-6 text-sm md:text-md lg:text-lg flex items-center justify-center">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
               className="justify-center items-center"
@@ -22,16 +30,16 @@ export default function ProdukBaru() {
                 fill="#D63031"
               />
             </svg>
-          </div>
-        </a>
+          </button>
+        </Link>
       </div>
 
       {/* Content */}
       <div className="flex lg:grid lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4 lg:mx-14 md:mx-14 lg:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
-        <div className="drop-shadow-xl">
+        <div className="drop-shadow-md">
           <div className="">
             <div className="relative">
-              <div className="absolute">
+              <div className="absolute z-10">
                 <svg
                   className="absolute top-3"
                   width="70"
@@ -52,7 +60,7 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-4 z-10">
                 <svg
                   width="22"
                   height="18"
@@ -68,47 +76,66 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <img
+              <Image
+                src={Product2}
                 className="w-40 md:w-full rounded-t-md"
-                src="/static/images/product2.jpg"
+                layout={"responsive"}
+                objectFit={"cover"}
               />
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
-            <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
-            <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
-            <span className="text-xs font-semi  bold">Rp 100.000</span>
-            <div className="hidden lg:block md:block md:m-2"></div>
-            <span className="text-xs ml-2">Stock {">"} 100</span>
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Expresso Coffee Blend
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Alacarte Blend 1kg
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white py-1">
+                Rp 100.000
+              </p>
+            </div>
+            <div>
+              <p className="text-xs ml-2 text-white py-1">Stock {">"} 100</p>
+            </div>
 
-            <a href="#">
-              <div className="bg-white py-1 rounded-md lg:font-bold lg:px-14 m-2 md:m-3 lg:m-4 text-[#D63031] flex justify-center items-center">
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.49953 13.4671V7.50701M7.49953 7.50701V1.54694M7.49953 7.50701H13.4596M7.49953 7.50701H1.53946"
-                    stroke="#D63031"
-                    strokeWidth="2.0631"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="lg:pl-2 pl-2 text-xs md:text-md lg:text-md">
-                  Keranjang
-                </span>
+            <div className="flex justify-center">
+              <div className="bg-white w-full px-3 rounded-md">
+                <div className="flex items-center justify-center gap-x-2 py-1">
+                  <div>
+                    <svg
+                      width="6"
+                      height="7"
+                      viewBox="0 0 6 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.99935 5.94652V3.39199M2.99935 3.39199V0.837463M2.99935 3.39199H5.55388M2.99935 3.39199H0.444824"
+                        stroke="#D63031"
+                        stroke-width="0.884259"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text-xs font-semibold text-red-600">
+                    Keranjang
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div className="drop-shadow-xl">
+        <div className="drop-shadow-md">
           <div className="">
             <div className="relative">
-              <div className="absolute">
+              <div className="absolute z-10">
                 <svg
                   className="absolute top-3"
                   width="70"
@@ -129,7 +156,7 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-4 z-10">
                 <svg
                   width="22"
                   height="18"
@@ -145,47 +172,66 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <img
+              <Image
+                src={Product4}
                 className="w-40 md:w-full rounded-t-md"
-                src="/static/images/product7.jpg"
+                layout={"responsive"}
+                objectFit={"cover"}
               />
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
-            <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
-            <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
-            <span className="text-xs font-semi  bold">Rp 100.000</span>
-            <div className="hidden lg:block md:block md:m-2"></div>
-            <span className="text-xs ml-2">Stock {">"} 100</span>
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Expresso Coffee Blend
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Alacarte Blend 1kg
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white py-1">
+                Rp 100.000
+              </p>
+            </div>
+            <div>
+              <p className="text-xs ml-2 text-white py-1">Stock {">"} 100</p>
+            </div>
 
-            <a href="#">
-              <div className="bg-white py-1 rounded-md lg:font-bold lg:px-14 m-2 md:m-3 lg:m-4 text-[#D63031] flex justify-center items-center">
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.49953 13.4671V7.50701M7.49953 7.50701V1.54694M7.49953 7.50701H13.4596M7.49953 7.50701H1.53946"
-                    stroke="#D63031"
-                    strokeWidth="2.0631"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="lg:pl-2 pl-2 text-xs md:text-md lg:text-md">
-                  Keranjang
-                </span>
+            <div className="flex justify-center">
+              <div className="bg-white w-full px-3 rounded-md">
+                <div className="flex items-center justify-center gap-x-2 py-1">
+                  <div>
+                    <svg
+                      width="6"
+                      height="7"
+                      viewBox="0 0 6 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.99935 5.94652V3.39199M2.99935 3.39199V0.837463M2.99935 3.39199H5.55388M2.99935 3.39199H0.444824"
+                        stroke="#D63031"
+                        stroke-width="0.884259"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text-xs font-semibold text-red-600">
+                    Keranjang
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div className="drop-shadow-xl">
+        <div className="drop-shadow-md">
           <div className="">
             <div className="relative">
-              <div className="absolute">
+              <div className="absolute z-10">
                 <svg
                   className="absolute top-3"
                   width="70"
@@ -206,7 +252,7 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-4 z-10">
                 <svg
                   width="22"
                   height="18"
@@ -222,47 +268,66 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <img
+              <Image
+                src={Product5}
                 className="w-40 md:w-full rounded-t-md"
-                src="/static/images/product2.jpg"
+                layout={"responsive"}
+                objectFit={"cover"}
               />
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
-            <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
-            <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
-            <span className="text-xs font-semi  bold">Rp 100.000</span>
-            <div className="hidden lg:block md:block md:m-2"></div>
-            <span className="text-xs ml-2">Stock {">"} 100</span>
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Expresso Coffee Blend
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Alacarte Blend 1kg
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white py-1">
+                Rp 100.000
+              </p>
+            </div>
+            <div>
+              <p className="text-xs ml-2 text-white py-1">Stock {">"} 100</p>
+            </div>
 
-            <a href="#">
-              <div className="bg-white py-1 rounded-md lg:font-bold lg:px-14 m-2 md:m-3 lg:m-4 text-[#D63031] flex justify-center items-center">
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.49953 13.4671V7.50701M7.49953 7.50701V1.54694M7.49953 7.50701H13.4596M7.49953 7.50701H1.53946"
-                    stroke="#D63031"
-                    strokeWidth="2.0631"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="lg:pl-2 pl-2 text-xs md:text-md lg:text-md">
-                  Keranjang
-                </span>
+            <div className="flex justify-center">
+              <div className="bg-white w-full px-3 rounded-md">
+                <div className="flex items-center justify-center gap-x-2 py-1">
+                  <div>
+                    <svg
+                      width="6"
+                      height="7"
+                      viewBox="0 0 6 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.99935 5.94652V3.39199M2.99935 3.39199V0.837463M2.99935 3.39199H5.55388M2.99935 3.39199H0.444824"
+                        stroke="#D63031"
+                        stroke-width="0.884259"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text-xs font-semibold text-red-600">
+                    Keranjang
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div className="drop-shadow-xl">
+        <div className="drop-shadow-md">
           <div className="">
             <div className="relative">
-              <div className="absolute">
+              <div className="absolute z-10">
                 <svg
                   className="absolute top-3"
                   width="70"
@@ -283,7 +348,7 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-4 z-10">
                 <svg
                   width="22"
                   height="18"
@@ -299,47 +364,66 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <img
+              <Image
+                src={Product2}
                 className="w-40 md:w-full rounded-t-md"
-                src="/static/images/product3.jpg"
+                layout={"responsive"}
+                objectFit={"cover"}
               />
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
-            <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
-            <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
-            <span className="text-xs font-semi  bold">Rp 100.000</span>
-            <div className="hidden lg:block md:block md:m-2"></div>
-            <span className="text-xs ml-2">Stock {">"} 100</span>
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Expresso Coffee Blend
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Alacarte Blend 1kg
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white py-1">
+                Rp 100.000
+              </p>
+            </div>
+            <div>
+              <p className="text-xs ml-2 text-white py-1">Stock {">"} 100</p>
+            </div>
 
-            <a href="#">
-              <div className="bg-white py-1 rounded-md lg:font-bold lg:px-14 m-2 md:m-3 lg:m-4 text-[#D63031] flex justify-center items-center">
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.49953 13.4671V7.50701M7.49953 7.50701V1.54694M7.49953 7.50701H13.4596M7.49953 7.50701H1.53946"
-                    stroke="#D63031"
-                    strokeWidth="2.0631"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="lg:pl-2 pl-2 text-xs md:text-md lg:text-md">
-                  Keranjang
-                </span>
+            <div className="flex justify-center">
+              <div className="bg-white w-full px-3 rounded-md">
+                <div className="flex items-center justify-center gap-x-2 py-1">
+                  <div>
+                    <svg
+                      width="6"
+                      height="7"
+                      viewBox="0 0 6 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.99935 5.94652V3.39199M2.99935 3.39199V0.837463M2.99935 3.39199H5.55388M2.99935 3.39199H0.444824"
+                        stroke="#D63031"
+                        stroke-width="0.884259"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text-xs font-semibold text-red-600">
+                    Keranjang
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div className="drop-shadow-xl mr-3.5 md:mr-0">
+        <div className="drop-shadow-md mr-3.5 md:mr-0">
           <div className="">
             <div className="relative">
-              <div className="absolute">
+              <div className="absolute z-10">
                 <svg
                   className="absolute top-3"
                   width="70"
@@ -360,7 +444,7 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-4 z-10">
                 <svg
                   width="22"
                   height="18"
@@ -376,41 +460,60 @@ export default function ProdukBaru() {
                   />
                 </svg>
               </div>
-              <img
+              <Image
+                src={Product7}
                 className="w-40 md:w-full rounded-t-md"
-                src="/static/images/product5.jpg"
+                layout={"responsive"}
+                objectFit={"cover"}
               />
             </div>
           </div>
 
-          <div className="w-40 md:w-full lg:w-full bg-red-600 text-white justify-center items-center text-center py-2 rounded-br-md rounded-bl-md">
-            <p className="text-xs pt-2 font-semibold">Expresso Coffee Blend</p>
-            <p className="text-xs pb-3 font-semibold">Alacarte Blend 1kg</p>
-            <span className="text-xs font-semi  bold">Rp 100.000</span>
-            <div className="hidden lg:block md:block md:m-2"></div>
-            <span className="text-xs ml-2">Stock {">"} 100</span>
+          <div className="w-40 md:w-full lg:w-full h-auto bg-red-600 justify-center items-center text-center py-3 rounded-b-md gap-y-1 flex flex-col">
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Expresso Coffee Blend
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white">
+                Alacarte Blend 1kg
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-white py-1">
+                Rp 100.000
+              </p>
+            </div>
+            <div>
+              <p className="text-xs ml-2 text-white py-1">Stock {">"} 100</p>
+            </div>
 
-            <a href="#">
-              <div className="bg-white py-1 rounded-md lg:font-bold lg:px-14 m-2 md:m-3 lg:m-4 text-[#D63031] flex justify-center items-center">
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.49953 13.4671V7.50701M7.49953 7.50701V1.54694M7.49953 7.50701H13.4596M7.49953 7.50701H1.53946"
-                    stroke="#D63031"
-                    strokeWidth="2.0631"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <span className="lg:pl-2 pl-2 text-xs md:text-md lg:text-md">
-                  Keranjang
-                </span>
+            <div className="flex justify-center">
+              <div className="bg-white w-full px-3 rounded-md">
+                <div className="flex items-center justify-center gap-x-2 py-1">
+                  <div>
+                    <svg
+                      width="6"
+                      height="7"
+                      viewBox="0 0 6 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.99935 5.94652V3.39199M2.99935 3.39199V0.837463M2.99935 3.39199H5.55388M2.99935 3.39199H0.444824"
+                        stroke="#D63031"
+                        stroke-width="0.884259"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <div className="text-xs font-semibold text-red-600">
+                    Keranjang
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>

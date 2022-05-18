@@ -1,15 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import Product1 from "../../public/static/images/product1.jpg";
+import Product2 from "../../public/static/images/product3.jpg";
 
 export default function BestProduct() {
   return (
     <div className="w-full">
       {/* Headding */}
-      <div className="flex lg:mx-14 md:mx-14 justify-between mb-1 lg:mb-6 lg:text-md ml-3.5">
-        <div className="font-bold text-black mb-1 lg:mb-6 text-md lg:text-lg">
+      <div className="flex lg:mx-14 md:mx-14 justify-between mb-1 lg:mb-3 lg:text-md ml-3.5">
+        <div className="font-bold text-black mb-1 lg:mb-3 text-md lg:text-lg">
           Pilihan Kopi Terbaik
         </div>
-        <a className="lg:hidden" href="#">
-          <div className="text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
+        <Link className="lg:hidden" href={"/auth/pilihanKopiTerbaik"}>
+          <button className="text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
               className="justify-center items-center"
@@ -24,17 +28,19 @@ export default function BestProduct() {
                 fill="#D63031"
               />
             </svg>
-          </div>
-        </a>
+          </button>
+        </Link>
       </div>
 
       {/* Content */}
       <div className="flex md:grid md:grid-cols-6 gap-2 md:gap-3 md:mx-14 md:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
         <Link href={"/auth/detail"}>
           <button className="w-28 md:w-full flex-none justify-center items-center">
-            <img
-              className="w-full rounded-tr-md rounded-tl-md"
-              src="/static/images/product1.jpg"
+            <Image
+              className="rounded-t-md"
+              src={Product1}
+              layout={"responsive"}
+              objectFit={"cover"}
             />
             <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md shadow-lg ">
               Expresso Coffee Blend <br />
@@ -44,9 +50,11 @@ export default function BestProduct() {
         </Link>
 
         <div className="w-28 md:w-full flex-none justify-center items-center">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product3.jpg"
+          <Image
+            className="rounded-t-md"
+            src={Product2}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Flores Manggarai <br />
@@ -55,9 +63,11 @@ export default function BestProduct() {
         </div>
 
         <div className="w-28 md:w-full flex-none justify-center items-center">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product1.jpg"
+          <Image
+            className="rounded-t-md"
+            src={Product1}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
@@ -66,9 +76,11 @@ export default function BestProduct() {
         </div>
 
         <div className="w-28 md:w-full flex-none justify-center items-center">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product3.jpg"
+          <Image
+            className="rounded-t-md"
+            src={Product2}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Bali Wanagiri 250gr
@@ -76,9 +88,11 @@ export default function BestProduct() {
         </div>
 
         <div className="w-28 md:w-full flex-none justify-center items-center">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product1.jpg"
+          <Image
+            className="rounded-t-md"
+            src={Product1}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
@@ -87,9 +101,11 @@ export default function BestProduct() {
         </div>
 
         <div className="w-28 md:w-full flex-none justify-center items-center md:hidden">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product3.jpg"
+          <Image
+            className="rounded-t-md"
+            src={Product2}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
@@ -98,9 +114,11 @@ export default function BestProduct() {
         </div>
 
         <div className="w-28 md:w-full flex-none justify-center items-center md:hidden">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/product1.jpg"
+          <Image
+            className="rounded-t-md"
+            src={Product1}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Expresso Coffee Blend <br />
@@ -110,9 +128,11 @@ export default function BestProduct() {
 
         <div className="mr-3.5 md:hidden">
           <div className="w-28 md:w-full flex-none justify-center items-center ">
-            <img
-              className="w-full rounded-tr-md rounded-tl-md"
-              src="/static/images/product3.jpg"
+            <Image
+              className="rounded-t-md"
+              src={Product2}
+              layout={"responsive"}
+              objectFit={"cover"}
             />
             <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
               Expresso Coffee Blend <br />
@@ -124,21 +144,29 @@ export default function BestProduct() {
         <div className="hidden md:block">
           <div className="w-28 md:w-full h-full flex flex-col justify-between items-center">
             <div className="w-full h-full grid grid-rows-2 grid-cols-2 gap-2 mb-3">
-              <img
-                className="w-full rounded-md"
-                src="/static/images/product1.jpg"
+              <Image
+                className="rounded-md"
+                src={Product1}
+                layout={"responsive"}
+                objectFit={"cover"}
               />
-              <img
-                className="w-full rounded-md"
-                src="/static/images/product3.jpg"
+              <Image
+                className="rounded-md"
+                src={Product2}
+                layout={"responsive"}
+                objectFit={"cover"}
               />
-              <img
-                className="w-full rounded-md"
-                src="/static/images/product1.jpg"
+              <Image
+                className="rounded-md"
+                src={Product1}
+                layout={"responsive"}
+                objectFit={"cover"}
               />
-              <img
-                className="w-full rounded-md"
-                src="/static/images/product3.jpg"
+              <Image
+                className="rounded-md"
+                src={Product2}
+                layout={"responsive"}
+                objectFit={"cover"}
               />
             </div>
             <Link href={"/auth/pilihanKopiTerbaik"}>

@@ -1,3 +1,12 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Mesin1 from "../../public/static/images/mesin1.png";
+import Mesin3 from "../../public/static/images/mesin3.png";
+import Mesin5 from "../../public/static/images/mesin5.png";
+import Mesin6 from "../../public/static/images/mesin6.png";
+import Mesin8 from "../../public/static/images/mesin8.png";
+
 export default function BrandPilihan() {
   return (
     <>
@@ -6,7 +15,7 @@ export default function BrandPilihan() {
         <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
           Brand Pilihan
         </div>
-        <a className="" href="#">
+        <Link href={"#"}>
           <div className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
@@ -23,15 +32,17 @@ export default function BrandPilihan() {
               />
             </svg>
           </div>
-        </a>
+        </Link>
       </div>
 
       {/* Content */}
       <div className="grid grid-cols-2  md:grid-cols-5 gap-2 md:gap-4 md:mx-[58px] mx-3.5">
         <div className="h-auto justify-center items-center md:drop-shadow-xl">
-          <img
+          <Image
             className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
-            src="/static/images/mesin1.png"
+            src={Mesin1}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="hidden md:block lg:block">
             <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
@@ -46,9 +57,11 @@ export default function BrandPilihan() {
         </div>
 
         <div className="h-auto justify-center items-center md:drop-shadow-xl">
-          <img
+          <Image
             className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
-            src="/static/images/mesin8.png"
+            src={Mesin8}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="hidden md:block lg:block">
             <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
@@ -63,9 +76,11 @@ export default function BrandPilihan() {
         </div>
 
         <div className="h-auto justify-center items-center md:drop-shadow-xl">
-          <img
+          <Image
             className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
-            src="/static/images/mesin3.png"
+            src={Mesin3}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="hidden md:block lg:block">
             <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
@@ -80,9 +95,11 @@ export default function BrandPilihan() {
         </div>
 
         <div className="h-auto justify-center items-center md:drop-shadow-xl">
-          <img
+          <Image
             className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
-            src="/static/images/mesin6.png"
+            src={Mesin6}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="hidden md:block lg:block">
             <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
@@ -97,9 +114,11 @@ export default function BrandPilihan() {
         </div>
 
         <div className="h-auto justify-center items-center drop-shadow-xl hidden lg:block md:block">
-          <img
-            className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/mesin5.png"
+          <Image
+            className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
+            src={Mesin5}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
             Mazzer

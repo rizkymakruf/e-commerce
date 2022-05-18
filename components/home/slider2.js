@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-// import { DotButton, PrevButton, NextButton } from "./EmblaCarouselButtons";
-// import { mediaByIndex } from "../media";
-// import "../css/embla.css";
+
+import Link from "next/link";
+import Image from "next/image";
+
+import Slide2 from "../../public/static/images/slider-img.png";
 
 const Slider2 = ({ slide2, options = { loop: false } }) => {
   const autoplay = useRef(
@@ -12,7 +14,6 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
       (emblaRoot) => emblaRoot.parentElement
     )
   );
-  // const [emblaRef, emblaApi] = useEmblaCarousel(options, [autoplay.current]);
 
   const [viewportRef, embla, emblaRef, emblaApi] = useEmblaCarousel(
     { skipSnaps: false },
@@ -29,17 +30,6 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
     (index) => embla && embla.scrollTo(index),
     [embla]
   );
-  // const scrollNext = useCallback(() => {
-  //   if (!emblaApi) return;
-  //   emblaApi.scrollNext();
-  //   autoplay.current.reset();
-  // }, [emblaApi]);
-
-  // const scrollPrev = useCallback(() => {
-  //   if (!emblaApi) return;
-  //   emblaApi.scrollPrev();
-  //   autoplay.current.reset();
-  // }, [emblaApi]);
 
   const onSelect = useCallback(() => {
     if (!embla) return;
@@ -67,6 +57,12 @@ const Slider2 = ({ slide2, options = { loop: false } }) => {
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
                     <div className="">
+                      {/* <Image
+                        className="-translate-y-16 -translate-x-3 md:-translate-y-32 lg:-translate-y-40 md:-translate-x-16 lg:-translate- w-60 md:w-8/12 lg:w-7/12 absolute z-20"
+                        src={Slide2}
+                        layout={"responsive"}
+                        objectFit={"cover"}
+                      /> */}
                       <img
                         className="-translate-y-16 -translate-x-3 md:-translate-y-32 lg:-translate-y-40 md:-translate-x-16 lg:-translate- w-60 md:w-8/12 lg:w-7/12 absolute z-20"
                         src="/static/images/slider-img.png"

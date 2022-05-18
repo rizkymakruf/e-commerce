@@ -1,3 +1,10 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Populer1 from "../../public/static/images/populer1.png";
+import Populer2 from "../../public/static/images/populer2.png";
+import Populer3 from "../../public/static/images/populer3.png";
+
 export default function KategoriPopuler() {
   return (
     <>
@@ -29,9 +36,11 @@ export default function KategoriPopuler() {
       {/* Content */}
       <div className="flex md:grid md:grid-cols-3 gap-2 md:gap-4 md:mx-14 md:overflow-hidden overflow-x-scroll ml-3.5 mb-10">
         <div className="w-52 md:w-full flex-none justify-center items-center">
-          <img
+          <Image
             className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/populer1.png"
+            src={Populer1}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Green Beans Coffee
@@ -39,18 +48,22 @@ export default function KategoriPopuler() {
         </div>
 
         <div className="w-52 md:w-full flex-none justify-center items-center">
-          <img
+          <Image
             className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/populer2.png"
+            src={Populer2}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Coffee Grinder
           </div>
         </div>
         <div className="w-52 md:w-full flex-none justify-center items-center mr-3.5">
-          <img
+          <Image
             className="w-full rounded-tr-md rounded-tl-md"
-            src="/static/images/populer3.png"
+            src={Populer3}
+            layout={"responsive"}
+            objectFit={"cover"}
           />
           <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex text-[10px] lg:text-xs rounded-br-md font-semibold rounded-bl-md">
             Coffee Machines

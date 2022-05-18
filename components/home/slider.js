@@ -2,6 +2,9 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
+import Image from "next/image";
+import Slider1 from "../../public/static/images/cb-3.png";
+
 const Slider = ({ slides, options = { loop: true } }) => {
   const autoplay = useRef(
     Autoplay(
@@ -63,7 +66,7 @@ const Slider = ({ slides, options = { loop: true } }) => {
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
                     <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                      <Image src={Slider1} />
                     </div>
                     {/* Text */}
                     <div className="flex-col">
@@ -96,7 +99,7 @@ const Slider = ({ slides, options = { loop: true } }) => {
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
                     <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                      <Image src={Slider1} />
                     </div>
                     {/* Text */}
                     <div className="flex-col">
@@ -129,7 +132,7 @@ const Slider = ({ slides, options = { loop: true } }) => {
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
                     <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                      <Image src={Slider1} />
                     </div>
                     {/* Text */}
                     <div className="flex-col">
@@ -162,7 +165,7 @@ const Slider = ({ slides, options = { loop: true } }) => {
                   <div className="flex w-full gap-x-4 md:gap-x-8 items-center mx-3.5 md:mx-20">
                     {/* Image  */}
                     <div className="w-full md:p-5">
-                      <img src="/static/images/cb-3.png" />
+                      <Image src={Slider1} />
                     </div>
                     {/* Text */}
                     <div className="flex-col">

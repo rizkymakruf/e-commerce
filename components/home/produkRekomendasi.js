@@ -1,3 +1,10 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Rekomendasi1 from "../../public/static/images/rekomendasi1.png";
+import Rekomendasi2 from "../../public/static/images/rekomendasi2.png";
+import Rekomendasi3 from "../../public/static/images/rekomendasi3.png";
+
 export default function ProductRekomendasi() {
   return (
     <>
@@ -6,7 +13,7 @@ export default function ProductRekomendasi() {
         <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
           Produk Rekomendasi
         </div>
-        <a className="" href="#">
+        <Link href={"#"}>
           <div className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
@@ -23,7 +30,7 @@ export default function ProductRekomendasi() {
               />
             </svg>
           </div>
-        </a>
+        </Link>
       </div>
 
       {/* Content */}
@@ -33,7 +40,7 @@ export default function ProductRekomendasi() {
             <div className="">
               <div className="relative">
                 <div className="absolute"></div>
-                <div className="absolute bottom-4 right-4">
+                <div className="absolute bottom-4 right-4 z-10">
                   <svg
                     width="22"
                     height="18"
@@ -49,9 +56,11 @@ export default function ProductRekomendasi() {
                     />
                   </svg>
                 </div>
-                <img
+                <Image
                   className="w-60 md:w-full rounded-t-md"
-                  src="/static/images/rekomendasi1.png"
+                  src={Rekomendasi1}
+                  layout={"responsive"}
+                  objectFit={"cover"}
                 />
               </div>
             </div>
@@ -90,7 +99,7 @@ export default function ProductRekomendasi() {
             <div className="">
               <div className="relative">
                 <div className="absolute"></div>
-                <div className="absolute bottom-4 right-4">
+                <div className="absolute bottom-4 right-4 z-10">
                   <svg
                     width="22"
                     height="18"
@@ -106,9 +115,11 @@ export default function ProductRekomendasi() {
                     />
                   </svg>
                 </div>
-                <img
+                <Image
                   className="w-60 md:w-full rounded-t-md"
-                  src="/static/images/rekomendasi2.png"
+                  src={Rekomendasi2}
+                  layout={"responsive"}
+                  objectFit={"cover"}
                 />
               </div>
             </div>
@@ -147,7 +158,7 @@ export default function ProductRekomendasi() {
             <div className="">
               <div className="relative">
                 <div className="absolute"></div>
-                <div className="absolute bottom-4 right-4">
+                <div className="absolute bottom-4 right-4 z-10">
                   <svg
                     width="22"
                     height="18"
@@ -163,9 +174,11 @@ export default function ProductRekomendasi() {
                     />
                   </svg>
                 </div>
-                <img
+                <Image
                   className="w-60 md:w-full rounded-t-md"
-                  src="/static/images/rekomendasi3.png"
+                  src={Rekomendasi3}
+                  layout={"responsive"}
+                  objectFit={"cover"}
                 />
               </div>
             </div>
