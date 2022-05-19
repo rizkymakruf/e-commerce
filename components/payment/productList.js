@@ -1,21 +1,7 @@
 import { useState } from "react";
 
-const KeranjangBelanja = () => {
+const ProductList = () => {
   const order = [
-    {
-      store: "Coldbrew  Roasters",
-      location: "Kuta, Bali",
-      product_name:
-        "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
-      product_price: "Rp 130.000",
-    },
-    {
-      store: "Coldbrew  Roasters",
-      location: "Kuta, Bali",
-      product_name:
-        "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
-      product_price: "Rp 130.000",
-    },
     {
       store: "Coldbrew  Roasters",
       location: "Kuta, Bali",
@@ -46,61 +32,67 @@ const KeranjangBelanja = () => {
     },
   ];
   return (
-    <div className="w-full">
-      <div className="pb-3">
-        <p className="text-xl font-bold">Keranjang Belanja</p>
+    <div className="w-full mb-5">
+      <div>
+        <p className="font-bold text-lg">Product</p>
+        <p className="text-sm text-gray-500">Dikirim dari Bali</p>
       </div>
-      <div className="flex w-full justify-between py-3">
+      {/* <div className="flex w-full justify-between">
         <div className="flex flex-row gap-x-6 items-center">
           <input
             type="checkbox"
-            className="checked:bg-red-600 focus:bg-red-600 appearance-none h-5 w-5 rounded-full"
+            className="checked:bg-red-600 focus:bg-red-600 appearance-none h-6 w-6 rounded-full"
           />
           <p>Pilih Semuanya</p>
         </div>
         <div>
-          <p className="font-bold">Hapus</p>
+          <p>Hapus</p>
         </div>
-      </div>
+      </div> */}
 
       {order.map((pro, index) => {
         return (
           <div className="flex flex-col py-2">
             <div className="">
-              <div className="flex flex-row gap-x-6 items-center border-t border-b py-4">
-                <input
+              <div className="flex flex-row gap-x-6 items-center border rounded-lg p-3 py-4">
+                {/* <input
                   type="checkbox"
-                  className="w-5 h-5 checked:bg-red-600 focus:bg-red-600 rounded-full"
-                />
+                  className="w-6 h-6 checked:bg-red-600 focus:bg-red-600 rounded-full"
+                /> */}
                 <div className="flex flex-col gap-y-2">
                   <div className="flex flex-row items-center gap-x-2">
                     <div className="bg-gray-300 w-10 h-10 rounded-full" />
                     <div>
-                      <p className="text-red-600 font-semibold text-md">
+                      <p className="font-semibold text-md text-red-600">
                         Coldbrew Roasters
                       </p>
-                      <p className="text-sm text-gray-400">Kuta, Bali</p>
+                      <p className="text-sm">Kuta, Bali</p>
                     </div>
                   </div>
                   <div className="flex flex-row items-center gap-x-2">
                     <div className="bg-gray-300 w-12 h-12 rounded-sm" />
                     <div>
-                      <p className="text-md">
+                      <p>
                         Single Origin Flores Manggarai Yellow Caturra 250gr
                         Coldbrew Roasters
                       </p>
-                      <p className="text-md font-bold">Rp 130.000</p>
+                      <p className="font-bold text-sm">Rp 130.000</p>
                     </div>
                   </div>
-                  <div className="w-full">
+                  {/* <div>
                     <input
-                      placeholder="Tulis catatan disini...."
-                      className="border border-gray-300 rounded-md outline-none py-1 px-2 text-sm"
+                      placeholder="Tulis catatan disini"
+                      className="border border-red-600 rounded-md outline-none py-1 px-2"
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="relative">
+                <div className="absolute bottom-14 right-5 flex flex-row gap-x-4 items-center">
+                  <p className="font-bold">x1</p>
+                </div>
+              </div>
+              {/* <div className="relative">
                 <div className="absolute bottom-4 right-0 flex flex-row gap-x-4 items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +156,7 @@ const KeranjangBelanja = () => {
                     </svg>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         );
@@ -173,7 +165,7 @@ const KeranjangBelanja = () => {
   );
 };
 
-export default KeranjangBelanja;
+export default ProductList;
 
 // const E = () => {
 //   const [name, setName] = useState("coffe");

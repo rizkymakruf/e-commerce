@@ -7,7 +7,7 @@ import Product7 from "../../public/static/images/product7.jpg";
 const TerakhirDilihat = () => {
   return (
     <div className="py-5">
-      <div className="flex px-5 py-2 justify-between">
+      <div className="flex py-2 justify-between">
         <div className="font-bold">Terakhir Dilihat</div>
         <div>
           <button className="flex items-center gap-2">
@@ -27,7 +27,7 @@ const TerakhirDilihat = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-x-2 gap-y-3 w-full">
+      <div className="grid grid-cols-4 gap-x-5 gap-y-3 w-full">
         <div className="drop-shadow-md">
           <div className="">
             <div className="relative">
@@ -47,7 +47,12 @@ const TerakhirDilihat = () => {
                   />
                 </svg>
               </div>
-              <Image src={Product2} objectFit={"cover"} layout={"responsive"} />
+              <Image
+                className="rounded-t-md"
+                src={Product2}
+                objectFit={"cover"}
+                layout={"responsive"}
+              />
             </div>
           </div>
 
@@ -115,7 +120,12 @@ const TerakhirDilihat = () => {
                   />
                 </svg>
               </div>
-              <Image src={Product4} objectFit={"cover"} layout={"responsive"} />
+              <Image
+                className="rounded-t-md"
+                src={Product4}
+                objectFit={"cover"}
+                layout={"responsive"}
+              />
             </div>
           </div>
 
@@ -183,7 +193,12 @@ const TerakhirDilihat = () => {
                   />
                 </svg>
               </div>
-              <Image src={Product5} objectFit={"cover"} layout={"responsive"} />
+              <Image
+                className="rounded-t-md"
+                src={Product5}
+                objectFit={"cover"}
+                layout={"responsive"}
+              />
             </div>
           </div>
 
@@ -251,7 +266,12 @@ const TerakhirDilihat = () => {
                   />
                 </svg>
               </div>
-              <Image src={Product7} objectFit={"cover"} layout={"responsive"} />
+              <Image
+                className="rounded-t-md"
+                src={Product7}
+                objectFit={"cover"}
+                layout={"responsive"}
+              />
             </div>
           </div>
 

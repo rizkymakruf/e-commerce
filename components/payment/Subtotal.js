@@ -36,7 +36,7 @@ const ProductGalery = () => {
               <Link href={"/auth/payment"}>
                 <button className="bg-red-600 w-full rounded-md border border-red-600">
                   <div className="flex items-cente justify-center gap-2 py-2">
-                    <p className="text-white">Beli</p>
+                    <p className="text-white">Pilih Metode Pembayaran</p>
                   </div>
                 </button>
               </Link>
