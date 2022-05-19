@@ -230,14 +230,16 @@ export default function NavBar() {
         <Link href={"/auth/login"} passHref>
           <button className="hidden md:block">
             <a>
-              <span className="text-sm font-semibold text-white">Masuk</span>
+              <span className="text-sm font-semibold text-white hover:text-red-600 hover:bg-white p-1 rounded-md ">
+                Masuk
+              </span>
             </a>
           </button>
         </Link>
         <Link href={"/auth/register"} passHref>
           <button className="hidden md:block">
             <a>
-              <span className="py-1 px-2 bg-white text-red-600 font-semibold text-sm rounded-md">
+              <span className="py-1 px-2 bg-white hover:bg-red-700 hover:text-white text-red-600 font-semibold text-sm rounded-md">
                 Daftar
               </span>
             </a>

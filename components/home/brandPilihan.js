@@ -15,8 +15,8 @@ export default function BrandPilihan() {
         <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
           Brand Pilihan
         </div>
-        <Link href={"#"}>
-          <div className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
+        <Link href={"/auth/brandPilihan"}>
+          <button className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
               className="justify-center items-center"
@@ -31,30 +31,34 @@ export default function BrandPilihan() {
                 fill="#D63031"
               />
             </svg>
-          </div>
+          </button>
         </Link>
       </div>
 
       {/* Content */}
       <div className="grid grid-cols-2  md:grid-cols-5 gap-2 md:gap-4 md:mx-[58px] mx-3.5">
-        <div className="h-auto justify-center items-center md:drop-shadow-xl">
-          <Image
-            className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
-            src={Mesin1}
-            layout={"responsive"}
-            objectFit={"cover"}
-          />
-          <div className="hidden md:block lg:block">
-            <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
-              La Marzocco
+        <Link href={"/auth/brandPilihan/product"}>
+          <button>
+            <div className="h-auto justify-center items-center md:drop-shadow-xl">
+              <Image
+                className="w-full rounded-lg md:rounded-t-md md:rounded-b-none"
+                src={Mesin1}
+                layout={"responsive"}
+                objectFit={"cover"}
+              />
+              <div className="hidden md:block lg:block">
+                <div className="bg-red-600 text-white items-center text-center justify-center h-11 flex lg:text-md rounded-br-md font-semibold rounded-bl-md">
+                  La Marzocco
+                </div>
+              </div>
+              <div className="flex justify-center items-center md:hidden lg:hidden z-10">
+                <div className="text-[#D63031] bg-white rounded-t-md w-24 text-center text-xs py-1 -mt-6 font-bold">
+                  La Marzocco
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex justify-center items-center md:hidden lg:hidden z-10">
-            <div className="text-[#D63031] bg-white rounded-t-md w-24 text-center text-xs py-1 -mt-6 font-bold">
-              La Marzocco
-            </div>
-          </div>
-        </div>
+          </button>
+        </Link>
 
         <div className="h-auto justify-center items-center md:drop-shadow-xl">
           <Image

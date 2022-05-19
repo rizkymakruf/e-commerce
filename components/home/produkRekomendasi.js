@@ -13,8 +13,8 @@ export default function ProductRekomendasi() {
         <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
           Produk Rekomendasi
         </div>
-        <Link href={"#"}>
-          <div className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
+        <Link href={"/auth/productRekomendasi"}>
+          <button className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
               className="justify-center items-center"
@@ -29,7 +29,7 @@ export default function ProductRekomendasi() {
                 fill="#D63031"
               />
             </svg>
-          </div>
+          </button>
         </Link>
       </div>
 
