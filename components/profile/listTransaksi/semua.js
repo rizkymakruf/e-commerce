@@ -7,6 +7,7 @@ export default function Semua() {
       product:
         "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
       total: "Rp 130.000",
+      bg: "bg-green-600",
     },
     {
       tanggal: "Belanja 27 Mei 2022",
@@ -55,17 +56,22 @@ export default function Semua() {
                 </p>
               </div>
               <div>
-              <button
-              className={`${
-                list.status === "Selesai" 
-                ? "bg-green-600 text-white" : list.status === "Dikemas" ? "bg-yellow-500" : ""
-                  
-              } px-2 text-sm text-black rounded-lg`}
-              onMouseOver={() => setProfilMenu("voucher")}
-              // onMouseOver={() => setCategory("coffee")}
-            >
+                <button
+                  className={`px-2 text-sm text-white rounded-lg ${
+                    list.status === "Selesai"
+                      ? "bg-green-500"
+                      : list.status === "Dikemas"
+                      ? "bg-orange-500"
+                      : list.status === "Dikirim"
+                      ? "bg-blue-500"
+                      : list.status === "Belum Bayar"
+                      ? "bg-yellow-500"
+                      : list.status === "Dibatalkan" && "bg-red-500"
+                  }`}
+                >
                   {list.status}
-              </button>
+                </button>
+              </div>
             </div>
             {/* toko */}
             <div className="flex items-center gap-2 w-full">

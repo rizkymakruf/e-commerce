@@ -1,12 +1,13 @@
-export default function Dikemas() {
+export default function Selesai() {
   const listTransaksi = [
     {
-      tanggal: "Belanja 27 Mei 2022",
-      status: "Dikemas",
+      tanggal: "Belanja 20 Mei 2022",
+      status: "Selesai",
       toko: "Coldbrew Roasters",
       product:
         "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
-      total: "Rp 150.000",
+      total: "Rp 130.000",
+      bg: "bg-green-600",
     },
   ];
   return (
