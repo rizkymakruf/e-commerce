@@ -2,8 +2,10 @@ import Category from "./category";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { GlobalContext } from "context/global";
 
-import Logo from "../../public/static/images/logo.png";
+import Pp from "../../public/static/images/pp.png";
+import { useContext } from "react";
 
 export default function NavBar() {
   const [category, setCategory] = useState(false);
@@ -11,6 +13,8 @@ export default function NavBar() {
   function Hovered() {
     !category ? null : setCategory(true);
   }
+
+  const { globalCtx, globalAct } = useContext(GlobalContext);
 
   return (
     <>
@@ -227,24 +231,40 @@ export default function NavBar() {
             </button>
           </Link>
         </div>
-        <Link href={"/auth/login"} passHref>
-          <button className="hidden md:block">
-            <a>
-              <span className="text-sm font-semibold text-white hover:text-red-600 hover:bg-white p-1 rounded-md ">
-                Masuk
-              </span>
-            </a>
-          </button>
-        </Link>
-        <Link href={"/auth/register"} passHref>
-          <button className="hidden md:block">
-            <a>
-              <span className="py-1 px-2 bg-white hover:bg-red-700 hover:text-white text-red-600 font-semibold text-sm rounded-md">
-                Daftar
-              </span>
-            </a>
-          </button>
-        </Link>
+        {globalCtx.fullname === "" ? (
+          <div>
+            <Link href={"/auth/login"} passHref>
+              <button className="hidden md:block">
+                <a>
+                  <span className="text-sm font-semibold text-white hover:text-red-600 hover:bg-white p-1 rounded-md ">
+                    Masuk
+                  </span>
+                </a>
+              </button>
+            </Link>
+            <Link href={"/auth/register"} passHref>
+              <button className="hidden md:block">
+                <a>
+                  <span className="py-1 px-2 bg-white hover:bg-red-700 hover:text-white text-red-600 font-semibold text-sm rounded-md">
+                    Daftar
+                  </span>
+                </a>
+              </button>
+            </Link>
+          </div>
+        ) : (
+          <Link href={"/auth/profile"}>
+            <button>
+              <div className="flex items-center gap-x-3">
+                <div>
+                  <div className="w-12 h-12 rounded-full flex-nowrap">
+                    <Image src={Pp} className={"rounded-full"} />
+                  </div>
+                </div>
+              </div>
+            </button>
+          </Link>
+        )}
       </div>
     </>
   );

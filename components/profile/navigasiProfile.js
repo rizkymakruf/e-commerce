@@ -1,14 +1,24 @@
 import Pp from "../../public/static/images/pp.png";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+// importing view navigasi
+import AkunNav from "./akunNav";
+import AlamatNav from "./alamatNav";
+import DaftarTransaksiNav from "./daftarTransaksiNav";
+import WishlistNav from "./wishlistNav";
+import NotifikasiNav from "./notifikasiNav";
+import VoucherNav from "./voucherNav";
+
 export default function NavigasiProfile() {
+  const [profilMenu, setProfilMenu] = useState("akun");
   return (
-    <>
-      <div className="w-4/12 h-auto bg-yellow-300 drop-shadow-md rounded-lg">
-        <div className="flex-col items-center p-5">
-          <div className="flex items-center gap-x-3">
-            <div className="w-14 h-14">
+    <div className="w-full flex gap-10">
+      <div className="w-3/12">
+        <div className="flex-col items-center p-5 bg-white drop-shadow-md rounded-lg">
+          <div className="flex items-center gap-x-3 py-3 mb-2 border-b-2">
+            <div className="w-14 h-14 hover:scale-125 duration-200">
               <Image src={Pp} className={"rounded-full"} />
             </div>
             <div className="flex-col items-center">
@@ -18,15 +28,20 @@ export default function NavigasiProfile() {
               </p>
             </div>
           </div>
-          <div className="py-3">
-            <hr />
-          </div>
-          <div className="space-y-3">
-            <div className="flex items-center gap-x-2">
-              <div>
+          <div className="space-y-2">
+            <button
+              className={`${
+                profilMenu === "akun"
+                  ? "bg-red-600 text-white"
+                  : "text-[#414141]"
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex duration-200`}
+              onMouseOver={() => setProfilMenu("akun")}
+              // onMouseOver={() => setCategory("coffee")}
+            >
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-[#414141]"
+                  class="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -36,16 +51,22 @@ export default function NavigasiProfile() {
                     clipRule="evenodd"
                   />
                 </svg>
+                <p className="text-md font-normal">Akun</p>
               </div>
-              <div>
-                <p className="text-md">Akun</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-2">
-              <div className="">
+            </button>
+            <button
+              className={`${
+                profilMenu === "alamat"
+                  ? "bg-red-600 text-white"
+                  : "text-[#414141]"
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex hover:scale-110 duration-200`}
+              onMouseOver={() => setProfilMenu("alamat")}
+              // onMouseOver={() => setCategory("coffee")}
+            >
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-[#414141]"
+                  class="h-5 w-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -55,16 +76,22 @@ export default function NavigasiProfile() {
                     clip-rule="evenodd"
                   />
                 </svg>
+                <p className="text-md font-normal">Alamat</p>
               </div>
-              <div>
-                <p className="text-md">Alamat</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-2">
-              <div>
+            </button>
+            <button
+              className={`${
+                profilMenu === "daftarTransaksi"
+                  ? "bg-red-600 text-white"
+                  : "text-[#414141]"
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex hover:scale-110 duration-200`}
+              onMouseOver={() => setProfilMenu("daftarTransaksi")}
+              // onMouseOver={() => setCategory("coffee")}
+            >
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-[#414141]"
+                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -76,16 +103,22 @@ export default function NavigasiProfile() {
                     d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
                   />
                 </svg>
+                <p className="text-md font-normal">Daftar Transaksi</p>
               </div>
-              <div>
-                <p className="text-md">Daftar Transaksi</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-2">
-              <div>
+            </button>
+            <button
+              className={`${
+                profilMenu === "wishlist"
+                  ? "bg-red-600 text-white"
+                  : "text-[#414141]"
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex hover:scale-110 duration-200`}
+              onMouseOver={() => setProfilMenu("wishlist")}
+              // onMouseOver={() => setCategory("coffee")}
+            >
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-[#414141]"
+                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -97,16 +130,22 @@ export default function NavigasiProfile() {
                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                   />
                 </svg>
+                <p className="text-md font-normal">Wishlist</p>
               </div>
-              <div>
-                <p className="text-md">Wishlist</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-2">
-              <div>
+            </button>
+            <button
+              className={`${
+                profilMenu === "notifikasi"
+                  ? "bg-red-600 text-white"
+                  : "text-[#414141]"
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex hover:scale-110 duration-200`}
+              onMouseOver={() => setProfilMenu("notifikasi")}
+              // onMouseOver={() => setCategory("coffee")}
+            >
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-[#414141]"
+                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -118,16 +157,22 @@ export default function NavigasiProfile() {
                     d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                   />
                 </svg>
+                <p className="text-md font-normal">Notifikasi</p>
               </div>
-              <div>
-                <p className="text-md">Notifikasi</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-2">
-              <div>
+            </button>
+            <button
+              className={`${
+                profilMenu === "voucher"
+                  ? "bg-red-600 text-white"
+                  : "text-[#414141]"
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex hover:scale-110 duration-200`}
+              onMouseOver={() => setProfilMenu("voucher")}
+              // onMouseOver={() => setCategory("coffee")}
+            >
+              <div className="flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-[#414141]"
+                  class="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -139,35 +184,65 @@ export default function NavigasiProfile() {
                     d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
                   />
                 </svg>
+                <p className="text-md font-normal">Voucher</p>
               </div>
-              <div>
-                <p className="text-md">Voucher</p>
+            </button>
+
+            <button className="w-full py-3">
+              <div className="flex items-center gap-x-2 py-2 hover:bg-red-600 px-2 rounded-full hover:text-white text-red-600 hover:scale-110 duration-200">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-md font-semibold">Log Out</p>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center gap-x-2 py-2">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 hover:text-white text-red-600"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p className="text-md text-red-600">Voucher</p>
-              </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
-    </>
+      {/* menu selection hover */}
+
+      {profilMenu === "akun" ? (
+        <div className="w-9/12 shadow-md rounded-xl p-5">
+          <AkunNav />
+        </div>
+      ) : profilMenu === "alamat" ? (
+        <div className="w-9/12 h-auto shadow-md rounded-xl p-5">
+          <AlamatNav />
+        </div>
+      ) : profilMenu === "daftarTransaksi" ? (
+        <div className="w-9/12 h-auto shadow-md rounded-xl p-5">
+          <DaftarTransaksiNav />
+        </div>
+      ) : profilMenu === "wishlist" ? (
+        <div className="w-9/12 h-auto bg-pink-500 shadow-md rounded-xl p-5">
+          <WishlistNav />
+        </div>
+      ) : profilMenu === "notifikasi" ? (
+        <div className="w-9/12 h-auto shadow-md rounded-xl p-5">
+          <NotifikasiNav />
+        </div>
+      ) : (
+        profilMenu === "voucher" && (
+          <div className="w-9/12 h-auto bg-orange-400 shadow-md rounded-xl p-5">
+            <VoucherNav />
+          </div>
+        )
+      )}
+    </div>
   );
 }

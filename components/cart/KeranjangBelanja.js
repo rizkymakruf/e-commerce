@@ -77,7 +77,7 @@ const KeranjangBelanja = () => {
                     <div className="bg-gray-300 w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-red-600 font-semibold text-md">
-                        Coldbrew Roasters
+                        {pro.store}
                       </p>
                       <p className="text-sm text-gray-400">Kuta, Bali</p>
                     </div>

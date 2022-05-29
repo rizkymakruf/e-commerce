@@ -3,28 +3,27 @@ import { useState, createContext } from "react";
 export const GlobalContext = createContext();
 
 export const GlobalProvider = ({ children }) => {
-
-  const [isFetch, setIsFetch] = useState(false)
-  const [errorMsg, setErrorMsg] = useState("")
+  const [isFetch, setIsFetch] = useState(false);
+  const [isView, setIsView] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [fullname, setFullname] = useState("asdasd");
 
   const contextValue = {
     globalCtx: {
       errorMsg,
       isFetch,
-      fullname
+      fullname,
     },
     globalAct: {
       setErrorMsg,
       setIsFetch,
-      setFullname
-    }
+      setFullname,
+    },
   };
 
   return (
-    <GlobalContext.Provider value={ contextValue }>
-      { children }
+    <GlobalContext.Provider value={contextValue}>
+      {children}
     </GlobalContext.Provider>
   );
-
 };
