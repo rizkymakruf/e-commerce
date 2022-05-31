@@ -34,7 +34,7 @@ export default function NavigasiProfile() {
                 profilMenu === "akun"
                   ? "bg-red-600 text-white"
                   : "text-[#414141]"
-              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex duration-200`}
+              } hover:bg-red-600 w-full py-2 rounded-full pl-2 font-semibold justify-start flex  hover:scale-110 duration-200`}
               onMouseOver={() => setProfilMenu("akun")}
               // onMouseOver={() => setCategory("coffee")}
             >
@@ -229,7 +229,7 @@ export default function NavigasiProfile() {
           <DaftarTransaksiNav />
         </div>
       ) : profilMenu === "wishlist" ? (
-        <div className="w-9/12 h-auto bg-pink-500 shadow-md rounded-xl p-5">
+        <div className="w-9/12 h-auto shadow-md rounded-xl p-5">
           <WishlistNav />
         </div>
       ) : profilMenu === "notifikasi" ? (
@@ -238,7 +238,7 @@ export default function NavigasiProfile() {
         </div>
       ) : (
         profilMenu === "voucher" && (
-          <div className="w-9/12 h-auto bg-orange-400 shadow-md rounded-xl p-5">
+          <div className="w-9/12 h-auto shadow-md rounded-xl p-5">
             <VoucherNav />
           </div>
         )

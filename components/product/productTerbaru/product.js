@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProductFour from "/public/static/images/product4.jpg";
 
-// public/static/images/product7.jpg
 const Product = () => {
   const products = [
     {

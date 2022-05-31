@@ -7,7 +7,6 @@ export default function Semua() {
       product:
         "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
       total: "Rp 130.000",
-      bg: "bg-green-600",
     },
     {
       tanggal: "Belanja 27 Mei 2022",
