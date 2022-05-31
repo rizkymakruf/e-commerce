@@ -11,7 +11,7 @@ export default function Profile() {
       {/* <RouteBar /> */}
       <div className="mt-24">
         <div className="pb-24">
-          <div className="mx-10 py-8">
+          <div className="">
             <div className="flex gap-10">
               <NavigasiProfile />
             </div>

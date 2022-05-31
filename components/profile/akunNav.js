@@ -252,7 +252,7 @@ export default function AkunNav() {
         </div>
         {/* button */}
         <div className="flex justify-end ">
-          <button className="bg-red-600 text-white text-sm font-semibold px-2 h-10 rounded-lg hover:bg-red-800 ">
+          <button className="bg-red-600 text-white text-sm font-semibold px-3 h-10 rounded-xl hover:bg-red-800 ">
             Simpan Perubahan
           </button>
         </div>

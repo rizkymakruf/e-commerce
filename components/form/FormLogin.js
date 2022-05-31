@@ -176,13 +176,15 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
                           <input type={"checkbox"} className="rounded-full" />
                           <p className="text-xs">Ingatkan saya</p>
                         </div>
-                        <button
-                          onClick={() => router.push("/auth/", "/auth/")}
-                          // disabled={globalCtx.isFetch ? "disabled" : ""}
-                          className="w-full px-8 h-10 bg-red-600 overflow-hidden text-white rounded-md hover:bg-red-700"
-                        >
-                          Masuk
-                        </button>
+                        <Link href={"/"}>
+                          <button
+                            onClick={() => router.push("/auth/", "/auth/")}
+                            // disabled={globalCtx.isFetch ? "disabled" : ""}
+                            className="w-full px-8 h-10 bg-red-600 overflow-hidden text-white rounded-md hover:bg-red-700"
+                          >
+                            Masuk
+                          </button>
+                        </Link>
                       </div>
                     </div>
 
