@@ -1,4 +1,8 @@
+import { GlobalContext } from "context/global";
+import { useContext } from "react";
+
 export default function Alamat() {
+  const { globalAct, globalCtx } = useContext(GlobalContext);
   return (
     <>
       <div className="w-full p-3 rounded-xl border border-gray-300">
@@ -21,7 +25,14 @@ export default function Alamat() {
             <p>JAWA TIMUR, KAB. BANYUWANGI Rogojampi 68462 Indonesia</p>
           </div>
           <div>
-            <button className="font-semibold text-red-600">Ubah Alamat</button>
+            <button
+              className="font-semibold text-red-600"
+              onClick={() =>
+                globalAct.setModal({ modal: "openAddAddress", type: "" })
+              }
+            >
+              Ubah Alamat
+            </button>
           </div>
         </div>
       </div>

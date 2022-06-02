@@ -16,10 +16,9 @@ const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 const slide2 = Array.from(Array(SLIDE_COUNT).keys());
 
-const Home = () => {
+const Homes = () => {
   return (
     <>
-      {/* <NavBar /> */}
       <Slider slides={slides} />
       <BestProduct />
       <ProdukBaru />
@@ -27,11 +26,9 @@ const Home = () => {
       <BrandPilihan />
       <Slider2 slide2={slide2} />
       <KategoriPopuler />
-      {/* <Footer /> */}
-      {/* <Navigasi /> */}
     </>
   );
 };
 
-Home.getLayout = getLayout;
-export default Home;
+Homes.getLayout = getLayout;
+export default Homes;

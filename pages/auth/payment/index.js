@@ -10,23 +10,24 @@ import ProductList from "components/payment/productList";
 import Alamat from "components/payment/alamat";
 import TambahAlamat from "components/payment/tambahAlamat";
 
+import { getLayout } from "components/layout/layout";
 const SLIDE_COUNT = 1;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
 
-export default function Home() {
+function Home() {
   return (
     <>
-      <NavBar />
-      <RouteBar />
-      <div className="h-full pt-4 flex px-16 gap-x-6 w-full">
+      {/* <NavBar />
+      <RouteBar /> */}
+      <div className="h-full pt-10 flex px-16 gap-x-6 mt-24 w-full">
         <div className="h-full w-full">
           <div className="h-full flex-col gap-x-6 w-full">
             <div className="w-full mb-2">
               <Alamat />
             </div>
-            <div className="w-full my-2">
+            {/* <div className="w-full my-2">
               <TambahAlamat />
-            </div>
+            </div> */}
             <div className="w-full">
               <ProductList />
             </div>
@@ -38,13 +39,16 @@ export default function Home() {
             </div> */}
           </div>
         </div>
-        <div className="flex-col gap-x-6 h-full sticky top-32">
+        <div className="flex-col gap-x-6 h-full sticky top-28">
           <Subtotal />
           <Ekspedisi />
         </div>
       </div>
-      <Footer />
-      <Navigasi />
+      {/* <Footer />
+      <Navigasi /> */}
     </>
   );
 }
+
+export default Home;
+Home.getLayout = getLayout;

@@ -19,12 +19,12 @@ export default function NavBar() {
   return (
     <>
       <div
-        className={`bg-black bg-opacity-80 w-full h-screen fixed z-40 ${
+        className={`bg-black bg-opacity-80 w-full h-screen absolute z-40 ${
           category ? "" : "hidden"
         }`}
       />
       <Category category={category} setCategory={setCategory} />
-      <div className="md:bg-red-700 md:bg-opacity-70 md:backdrop-filter md:backdrop-blur-md bg-white w-full h-24 flex items-center justify-around  md:px-14 gap-4 fixed z-50 top-0">
+      <div className="md:bg-red-700 md:bg-opacity-70 md:backdrop-filter md:backdrop-blur-md bg-white w-full h-24 flex items-center justify-around  md:px-14 gap-4 z-40 fixed top-0">
         <Link className="hidden md:block" href={"/"}>
           <button className="hidden md:block">
             <div className="flex items-center gap-x-2 w-full">

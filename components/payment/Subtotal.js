@@ -1,6 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
 
+//context
+import { GlobalContext } from "context/global";
+import { useContext } from "react";
+
 const ProductGalery = () => {
   const [note, setNote] = useState(false);
   const [val, setVal] = useState(1);
@@ -19,6 +23,8 @@ const ProductGalery = () => {
 
   const stock = 10;
 
+  const { globalAct, globalCtx } = useContext(GlobalContext);
+
   return (
     <div className="relative">
       <div className="">
@@ -34,7 +40,12 @@ const ProductGalery = () => {
             </div>
             <div>
               <Link href={"/auth/payment"}>
-                <button className="bg-red-600 w-full rounded-md border border-red-600">
+                <button
+                  className="bg-red-600 w-full rounded-md border border-red-600"
+                  onClick={() =>
+                    globalAct.setModal({ modal: "openPayment", type: "" })
+                  }
+                >
                   <div className="flex items-cente justify-center gap-2 py-2">
                     <p className="text-white">Pilih Metode Pembayaran</p>
                   </div>

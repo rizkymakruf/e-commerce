@@ -50,20 +50,20 @@ export default function TambahAlamat() {
             </div>
             <div className="py-1">
               <p className="text-sm font-semibold">Alamat Sebagai</p>
-              <div className="gap-2 grid grid-cols-3">
-                <button className="p-2 bg-white text-sm font-semibold text-gray-400 border border-gray-300 rounded-md">
+              <div className="flex gap-3">
+                <button className="px-2 py-1 bg-white text-sm text-gray-400 border border-gray-300 rounded-md">
                   Rumah
                 </button>
-                <button className="p-2 bg-white text-sm font-semibold text-gray-400 border border-gray-300 rounded-md">
+                <button className="px-2 py-1 bg-white text-sm text-gray-400 border border-gray-300 rounded-md">
                   Apartement
                 </button>
-                <button className="p-2 bg-red-600 text-sm font-semibold text-white border border-gray-300 rounded-md">
+                <button className="px-2 py-1 bg-red-600 text-sm text-white border border-gray-300 rounded-md">
                   Coffee Shop
                 </button>
-                <button className="p-2 bg-white text-sm font-semibold text-gray-400 border border-gray-300 rounded-md">
+                <button className="px-2 py-1 bg-white text-sm text-gray-400 border border-gray-300 rounded-md">
                   Kos
                 </button>
-                <button className="p-2 bg-white text-sm font-semibold text-gray-400 border border-gray-300 rounded-md">
+                <button className="px-2 py-1 bg-white text-sm text-gray-400 border border-gray-300 rounded-md">
                   Kantor
                 </button>
               </div>

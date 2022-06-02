@@ -23,9 +23,6 @@ export default function NavigasiProfile() {
   const [profilMenu, setProfilMenu] = useState("akun");
   return (
     <>
-      <div className="absolute">
-        <LogOut globalCtx={globalCtx} globalAct={globalAct} />
-      </div>
       <div className="w-full flex gap-10 p-10">
         <div className="w-3/12">
           <div className="flex-col items-center p-5 bg-white drop-shadow-md rounded-lg">

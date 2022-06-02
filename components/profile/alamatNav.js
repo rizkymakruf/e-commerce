@@ -1,4 +1,12 @@
+// import modal
+import AddAddress from "components/layout/modal/addAddress";
+
+//context
+import { GlobalContext } from "context/global";
+import { useContext } from "react";
+
 export default function AlamatNav() {
+  const { globalAct, globalCtx } = useContext(GlobalContext);
   return (
     <>
       <div className="flex-col gap-y-2 w-full">
@@ -24,7 +32,12 @@ export default function AlamatNav() {
           </div>
           {/* button */}
           <div className="flex-none">
-            <button className="bg-red-600 text-white text-sm py-2 px-3 rounded-full">
+            <button
+              className="bg-red-600 text-white text-sm py-2 px-3 rounded-full"
+              onClick={() =>
+                globalAct.setModal({ modal: "openAddAddress", type: "" })
+              }
+            >
               Ubah Alamat
             </button>
           </div>

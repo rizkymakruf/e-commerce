@@ -1,14 +1,19 @@
 import NavBar from "components/layout/navBar";
 import Footer from "components/layout/footer";
 import NavigasiProfile from "components/profile/navigasiProfile";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { GlobalContext } from "context/global";
 
-export default function Profile() {
+import { getLayout } from "components/layout/layout";
+
+//MODAL
+import AddAddress from "components/layout/modal/addAddress";
+import LogOut from "components/layout/modal/logOut";
+function Profile() {
+  const { globalCtx, globalAct } = useContext(GlobalContext);
   const [menu, setMenu] = useState("semua");
   return (
     <>
-      <NavBar />
-      {/* <RouteBar /> */}
       <div className="mt-24">
         <div className="pb-24">
           <div className="">
@@ -16,9 +21,11 @@ export default function Profile() {
               <NavigasiProfile />
             </div>
           </div>
-        </div>{" "}
-        <Footer />
+        </div>
       </div>
     </>
   );
 }
+
+export default Profile;
+Profile.getLayout = getLayout;
