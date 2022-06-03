@@ -11,12 +11,12 @@ export default function BrandPilihan() {
   return (
     <>
       {/* Heading */}
-      <div className="flex lg:mx-14 md:mx-14 justify-between mb-1 lg:mb-6 lg:text-md ml-3.5">
+      <div className="flex lg:mx-14 md:mx-14 justify-between items-center mb-1 lg:mb-3 lg:text-md ml-3.5">
         <div className="font-bold text-black mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
           Brand Pilihan
         </div>
         <Link href={"/auth/brandPilihan"}>
-          <button className="mt-5 lg:mt-10 text-sm md:text-md lg:text-lg flex items-center justify-center mr-3.5">
+          <button className="font-bold flex items-center mt-5 lg:mt-10 mb-1 lg:mb-6 text-md lg:text-lg">
             <span className="pr-2 font-bold text-red-600">Lihat Semua</span>
             <svg
               className="justify-center items-center"

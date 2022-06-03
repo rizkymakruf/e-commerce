@@ -79,9 +79,9 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
               </div>
             </div>
           </div>
-          <div className="bg-white w-full h-fullrounded-full">
+          <div className="w-full">
             <Image
-              className="w-full h-screen shadow-lg "
+              className="w-full shadow-lg "
               src={BgCoffee}
               layout={"responsive"}
               objectFit={"cover"}
@@ -121,22 +121,19 @@ export default function FormLogin({ myRef, globalCtx, globalAct, onSubmit }) {
                         >
                           {type ? (
                             <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5"
+                              width="17"
+                              height="12"
+                              viewBox="0 0 17 12"
                               fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="gray"
-                              strokeWidth={2}
+                              xmlns="http://www.w3.org/2000/svg"
                             >
                               <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                d="M16.3706 5.7637C14.694 2.6642 11.7537 0.788574 8.5 0.788574C5.24627 0.788574 2.30099 2.6642 0.639303 5.7637L0.5 5.99753L0.629353 6.23634C2.30597 9.33584 5.24627 11.2115 8.5 11.2115C11.7537 11.2115 14.699 9.36071 16.3706 6.23634L16.5 5.99753L16.3706 5.7637ZM8.5 10.1916C5.699 10.1916 3.12687 8.62937 1.63433 5.99753C3.12687 3.36569 5.699 1.8035 8.5 1.8035C11.301 1.8035 13.8433 3.37066 15.3607 5.99753C13.8433 8.62937 11.296 10.1916 8.5 10.1916Z"
+                                fill="#D63031"
                               />
                               <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                d="M8.64414 9.42536C10.529 9.42536 12.0571 7.89734 12.0571 6.01242C12.0571 4.12751 10.529 2.59949 8.64414 2.59949C6.75922 2.59949 5.2312 4.12751 5.2312 6.01242C5.2312 7.89734 6.75922 9.42536 8.64414 9.42536Z"
+                                fill="#D63031"
                               />
                             </svg>
                           ) : (

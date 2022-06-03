@@ -13,7 +13,7 @@ function Index() {
   return (
     <>
       <div className="">
-        <div className="w-full h-screen bg-yellow-300">
+        <div className="w-full h-screen">
           <FormLogin
             // Default Form
             globalCtx={globalCtx}
