@@ -36,7 +36,7 @@ export default function ProductRekomendasi() {
       {/* Content */}
       <div className="ml-3.5 md:mx-14">
         <div className="flex md:grid md:grid-cols-3 md:gap-4 gap-2 overflow-x-scroll md:overflow-hidden">
-          <div className="drop-shadow-xl">
+          <div className="">
             <div className="">
               <div className="relative">
                 <div className="absolute"></div>
@@ -95,7 +95,7 @@ export default function ProductRekomendasi() {
               </a>
             </div>
           </div>
-          <div className="drop-shadow-xl">
+          <div className="">
             <div className="">
               <div className="relative">
                 <div className="absolute"></div>
@@ -154,7 +154,7 @@ export default function ProductRekomendasi() {
               </a>
             </div>
           </div>
-          <div className="drop-shadow-xl mr-3.5 md:mr-0 lg:mr-0">
+          <div className=" mr-3.5 md:mr-0 lg:mr-0">
             <div className="">
               <div className="relative">
                 <div className="absolute"></div>

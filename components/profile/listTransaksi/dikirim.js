@@ -3,6 +3,7 @@ export default function Dikirim() {
     {
       tanggal: "Belanja 28 Mei 2022",
       status: "Dikirim",
+      dikirim: "Sedang dalam perjalanan",
       toko: "Coldbrew Roasters",
       product:
         "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
@@ -36,7 +37,7 @@ export default function Dikirim() {
                       : list.status === "Dibatalkan" && "bg-red-500"
                   }`}
                 >
-                  {list.status}
+                  {list.dikirim}
                 </button>
               </div>
             </div>

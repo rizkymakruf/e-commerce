@@ -36,7 +36,7 @@ export default function ProdukBaru() {
 
       {/* Content */}
       <div className="flex lg:grid lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4 lg:mx-14 md:mx-14 lg:overflow-hidden overflow-hidden overflow-x-scroll ml-3.5">
-        <div className="drop-shadow-md">
+        <div className="">
           <div className="">
             <div className="relative">
               <div className="absolute z-10">
@@ -132,7 +132,7 @@ export default function ProdukBaru() {
             </div>
           </div>
         </div>
-        <div className="drop-shadow-md">
+        <div className="">
           <div className="">
             <div className="relative">
               <div className="absolute z-10">
@@ -228,7 +228,7 @@ export default function ProdukBaru() {
             </div>
           </div>
         </div>
-        <div className="drop-shadow-md">
+        <div className="">
           <div className="">
             <div className="relative">
               <div className="absolute z-10">
@@ -324,7 +324,7 @@ export default function ProdukBaru() {
             </div>
           </div>
         </div>
-        <div className="drop-shadow-md">
+        <div className="">
           <div className="">
             <div className="relative">
               <div className="absolute z-10">
@@ -420,7 +420,7 @@ export default function ProdukBaru() {
             </div>
           </div>
         </div>
-        <div className="drop-shadow-md mr-3.5 md:mr-0">
+        <div className="mr-3.5 md:mr-0">
           <div className="">
             <div className="relative">
               <div className="absolute z-10">

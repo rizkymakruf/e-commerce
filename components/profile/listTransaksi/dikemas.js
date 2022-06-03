@@ -3,6 +3,7 @@ export default function Dikemas() {
     {
       tanggal: "Belanja 27 Mei 2022",
       status: "Dikemas",
+      dikemas: "Sedang dikemas",
       toko: "Coldbrew Roasters",
       product:
         "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
@@ -36,7 +37,7 @@ export default function Dikemas() {
                       : list.status === "Dibatalkan" && "bg-red-500"
                   }`}
                 >
-                  {list.status}
+                  {list.dikemas}
                 </button>
               </div>
             </div>

@@ -25,7 +25,7 @@ export default function DaftarTransaksiNav() {
                   listTransaksi === "semua"
                     ? "bg-red-600 text-white"
                     : "text-[#414141]"
-                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-full font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
+                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-xl font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
                 onClick={() => setListTransaksi("semua")}
               >
                 <p className="text-sm font-normal">Semua</p>
@@ -35,7 +35,7 @@ export default function DaftarTransaksiNav() {
                   listTransaksi === "belumbayar"
                     ? "bg-red-600 text-white"
                     : "text-[#414141]"
-                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-full font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
+                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-xl font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
                 onClick={() => setListTransaksi("belumbayar")}
               >
                 <p className="text-sm font-normal whitespace-nowrap">
@@ -47,7 +47,7 @@ export default function DaftarTransaksiNav() {
                   listTransaksi === "dikemas"
                     ? "bg-red-600 text-white"
                     : "text-[#414141]"
-                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-full font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
+                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-xl font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
                 onClick={() => setListTransaksi("dikemas")}
               >
                 <p className="text-sm font-normal whitespace-nowrap">Dikemas</p>
@@ -57,7 +57,7 @@ export default function DaftarTransaksiNav() {
                   listTransaksi === "dikirim"
                     ? "bg-red-600 text-white"
                     : "text-[#414141]"
-                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-full font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
+                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-xl font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
                 onClick={() => setListTransaksi("dikirim")}
               >
                 <p className="text-sm font-normal whitespace-nowrap">Dikirim</p>
@@ -67,7 +67,7 @@ export default function DaftarTransaksiNav() {
                   listTransaksi === "selesai"
                     ? "bg-red-600 text-white"
                     : "text-[#414141]"
-                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-full font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
+                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-xl font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
                 onClick={() => setListTransaksi("selesai")}
               >
                 <p className="text-sm font-normal whitespace-nowrap">Selesai</p>
@@ -77,7 +77,7 @@ export default function DaftarTransaksiNav() {
                   listTransaksi === "dibatalkan"
                     ? "bg-red-600 text-white"
                     : "text-[#414141]"
-                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-full font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
+                } hover:bg-red-600 hover:text-white w-full py-2 px-3 rounded-xl font-semibold leave="transition ease duration-500" hover:scale-110 duration-200`}
                 onClick={() => setListTransaksi("dibatalkan")}
               >
                 <p className="text-sm font-normal whitespace-nowrap">

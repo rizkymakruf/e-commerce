@@ -15,24 +15,16 @@ export default function Payment(props) {
     {
       mtd: "BNI Virtual Account",
     },
-    {
-      mtd: "MANDIRI Virtual Account",
-    },
-  ];
-  const mtd = [
-    { 
-        name: "Transfer Virtual Account" 
-    },
-    { 
-        name: "E-Wallet" 
-    },
+    // {
+    //   mtd: "MANDIRI Virtual Account",
+    // },
   ];
   return (
     <>
       <div
         className={`duration-700 bg-yellow-300/0 p-5 fixed z-50 rounded-xl flex items-center justify-center w-full ${
           globalCtx.modal.modal === "openPayment"
-            ? "-translate-y-1/4 bottom-0"
+            ? "-translate-y-16 bottom-0"
             : "translate-y-full overflow-hidden bottom-0"
         }`}
       >
@@ -73,10 +65,8 @@ export default function Payment(props) {
                   </p>
                 </div>
                 {/* Metode Pembayaran */}
-                <div className="p-4 rounded-lg border border-gray-300 space-y-4 my-2 overflow-y-scroll h-48 no-scrollbar">
-                {mtd.map((mtd, index) => {
-                    return (
-                  <p>{mtd.name}</p>
+                <div className="p-4 rounded-lg border border-gray-300 space-y-4 my-2 h-auto">
+                  <p>Transfer Virtual Account</p>
                   {pay.map((pay, index) => {
                     return (
                       <div className="flex items-center justify-between">
@@ -93,8 +83,6 @@ export default function Payment(props) {
                           />
                         </div>
                       </div>
-                      );
-                    })}
                     );
                   })}
                 </div>
@@ -119,33 +107,29 @@ export default function Payment(props) {
                       Detail Pesanan
                     </p>
                   </div>
-                  {/* <div className="flex items-center justify-between">
-                    <p className="text-sm">Total Tagihan</p>
-                    <p>Rp 360.000</p>
+                </div>
+                <div className="py-2">
+                  <div className="flex justify-between">
+                    <div>
+                      <p className="text-sm font-semibold text-red-600">
+                        Total Bayar
+                      </p>
+                      <p className="text-2xl font-extrabold text-gray-800">
+                        Rp 361.000
+                      </p>
+                    </div>
+                    <div className="relative">
+                      <div className="absolute bottom-0 right-0">
+                        <button className="py-1 px-8 text-white bg-red-600 rounded-lg">
+                          Bayar
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <p className="text-sm">Biaya Layanan</p>
-                    <p>Rp 1.000</p>
-                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-          {/* <div>
-            <p>Apakah anda ingin keluar add ?</p>
-          </div>
-          <div className="flex gap-3">
-            <Link href={"/auth/login"} passHref>
-              <button
-                className="bg-red-600 text-white py-1 px-3 rounded-lg"
-                onClick={() =>
-                  props.globalAct.setModal({ modal: "", type: "" })
-                }
-              >
-                YES
-              </button>
-            </Link>
-          </div> */}
         </div>
       </div>
     </>
