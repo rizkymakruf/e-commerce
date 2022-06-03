@@ -9,6 +9,15 @@ export default function Selesai() {
       total: "Rp 130.000",
       bg: "bg-green-600",
     },
+    {
+      tanggal: "Belanja 20 Mei 2022",
+      status: "Selesai",
+      toko: "Coldbrew Roasters",
+      product:
+        "Single Origin Flores Manggarai Yellow Caturra 250gr Coldbrew Roasters",
+      total: "Rp 130.000",
+      bg: "bg-green-600",
+    },
   ];
   return (
     <>
@@ -58,10 +67,10 @@ export default function Selesai() {
                 <p className="text-lg font-semibold">{list.total}</p>
               </div>
               <div className="flex pt-6">
-                <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
+                <button className="mx-2 px-2 text-sm font-semibold text-red-600 rounded-lg">
                   Lihat Transaksi
                 </button>
-                <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
+                <button className="mx-2 px-4 text-sm font-semibold bg-red-600 text-white rounded-xl">
                   Beli Lagi
                 </button>
               </div>

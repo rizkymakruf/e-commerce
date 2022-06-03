@@ -57,8 +57,8 @@ export default function BelumBayar() {
                 <p className="text-lg font-semibold">{list.total}</p>
               </div>
               <div className="flex pt-6">
-                <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
-                  Bayar
+                <button className="mx-2 px-3 text-sm font-semibold bg-red-600 text-white rounded-lg">
+                  Bayar Sekarang
                 </button>
               </div>
             </div>

@@ -57,14 +57,14 @@ export default function Dikemas() {
                 <p>Total Belanja</p>
                 <p className="text-lg font-semibold">{list.total}</p>
               </div>
-              <div className="flex pt-6">
+              {/* <div className="flex pt-6">
                 <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
                   Lihat Transaksi
                 </button>
                 <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
                   Beli Lagi
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         );

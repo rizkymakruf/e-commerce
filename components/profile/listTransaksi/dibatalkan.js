@@ -57,10 +57,10 @@ export default function Dibatalkan() {
                 <p className="text-lg font-semibold">{list.total}</p>
               </div>
               <div className="flex pt-6">
-                <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
+                <button className="mx-2 px-2 text-sm font-semibold text-red-600">
                   Lihat Transaksi
                 </button>
-                <button className="mx-2 px-2 text-sm font-semibold bg-red-600 text-white rounded-lg">
+                <button className="mx-2 px-4 text-sm font-semibold bg-red-600 text-white rounded-xl">
                   Beli Lagi
                 </button>
               </div>
