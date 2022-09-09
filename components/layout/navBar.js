@@ -272,22 +272,22 @@ export default function NavBar() {
             </Link>
           </div>
         ) : (
-          // <Link href={"/auth/profile"}>
-          <button
-            onMouseOver={() =>
-              globalAct.setModal({ modal: "openNavigator", type: "" })
-            }
-            onMouseLeave={() => globalAct.setModal({ modal: "", type: "" })}
-          >
-            <div className="flex items-center gap-x-3">
-              <div>
-                <div className="w-10 h-10 rounded-full flex-nowrap">
-                  <Image src={Pp} className={"rounded-full"} />
+          <Link href={"/auth/profile"}>
+            <button
+              onMouseOver={() =>
+                globalAct.setModal({ modal: "openNavigator", type: "" })
+              }
+              onMouseLeave={() => globalAct.setModal({ modal: "", type: "" })}
+            >
+              <div className="flex items-center gap-x-3">
+                <div>
+                  <div className="w-10 h-10 rounded-full flex-nowrap">
+                    <Image src={Pp} className={"rounded-full"} />
+                  </div>
                 </div>
               </div>
-            </div>
-          </button>
-          // </Link>
+            </button>
+          </Link>
         )}
       </div>
     </>
